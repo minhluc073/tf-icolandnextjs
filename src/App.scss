@@ -1,8 +1,8 @@
 @use "./scss/" as *;
 
 /**
-  * Name: ICOLand | ICO landing page & ICO Crypto HTML Template
-  * Version: 1.0.2
+  * Name: ICOLand | ICO landing page & ICO Crypto Next Js Template
+  * Version: 1.0.0
   * Author: Themesflat
   * Author URI: http://www.themesflat.com   
 */
@@ -10,6 +10,11 @@
 @import "./scss/components/feature.scss";
 @import "./scss/components/roadmap.scss";
 @import "./scss/components/token-details.scss";
+@import "./scss/components/team.scss";
+@import "./scss/components/faq.scss";
+@import "./scss/components/document.scss";
+@import "./scss/components/footer.scss";
+@import "./scss/components/gotop.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 
