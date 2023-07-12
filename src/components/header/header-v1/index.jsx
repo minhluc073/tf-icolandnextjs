@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 import Link from "next/link";
-import menus from "./menu";
-import logo from "../../assets/images/logo/logo-main.png";
-import Button from "../button/button-st1";
 import Image from "next/image";
+import menus from "../menu";
+import Button from "../../button/button-st1";
+import Button2 from "../../button/button-st2";
+import logo from "../../../assets/images/logo/logo-nft.png";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -50,7 +50,7 @@ const Header = () => {
                         key={idx}
                         onClick={() => handleDropdown(idx)}
                         className={`menu-item ${
-                          data.namesub ? "menu-item-has-children" : ""
+                          data.name ? "menu-item-has-children" : ""
                         } ${activeIndex === idx ? "active" : ""}`}
                       >
                         <Link href={data.links}>{data.name}</Link>
@@ -59,8 +59,8 @@ const Header = () => {
                             {data.namesub.map((submenu) => (
                               <li key={submenu.id} className="menu-item">
                                 <Link
-                                  onClick={handleDropdown}
                                   href={submenu.links}
+                                  onClick={handleDropdown}
                                 >
                                   {submenu.sub}
                                 </Link>
@@ -73,7 +73,8 @@ const Header = () => {
                   </ul>
                 </nav>
                 <div className="group-button">
-                  <Button title="LOGIN" path="/sign-in" />
+                  <Button2 title="EN" addclass="style-1" path="#" />
+                  <Button title="Login" addclass="style-2" path="/sign-in" />
                 </div>
                 <div
                   className={`mobile-button ${menuActive ? "active" : ""}`}

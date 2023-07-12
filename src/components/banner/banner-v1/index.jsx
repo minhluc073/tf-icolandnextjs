@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-// import "../styles.scss";
 
 function Banner(props) {
-  const [countdownDate] = useState(new Date("9/10/2023").getTime());
+  const [countdownDate] = useState(new Date("9/25/2023").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,

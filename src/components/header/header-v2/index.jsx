@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import Link from "next/link";
-import menus from "./menu";
-import logo from "../../assets/images/logo/logo-main.png";
-import Button from "../button/button-st1";
+import menus from "../menu";
+import Button from "../../button/button-st1";
+import logo from "../../../assets/images/logo/logo-06.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -59,8 +58,8 @@ const Header = () => {
                             {data.namesub.map((submenu) => (
                               <li key={submenu.id} className="menu-item">
                                 <Link
-                                  onClick={handleDropdown}
                                   href={submenu.links}
+                                  onClick={handleDropdown}
                                 >
                                   {submenu.sub}
                                 </Link>
@@ -73,7 +72,7 @@ const Header = () => {
                   </ul>
                 </nav>
                 <div className="group-button">
-                  <Button title="LOGIN" path="/sign-in" />
+                  <Button title="PURCHASE NOW" addclass="style-6" path="#" />
                 </div>
                 <div
                   className={`mobile-button ${menuActive ? "active" : ""}`}

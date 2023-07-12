@@ -2,7 +2,6 @@
 import "@/public/assets/font-iconmoon.css";
 import "@/src/assets/fonts/font-awesome.css";
 import "@/src/App.scss";
-import "@/src/components/header/header.styles.scss";
 import "@/src/scss/components/button.scss";
 import "@/src/scss/components/banner.scss";
 import "@/src/scss/components/_preloading.scss";
@@ -23,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     });
     setTimeout(() => {
       setLoading(true);
-    }, 1000);
+    }, 800);
   }, []);
   return <>{!loading ? <Preloader /> : <Component {...pageProps} />}</>;
 }

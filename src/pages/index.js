@@ -18,8 +18,9 @@ import Faq from "../components/faq/faq-v1";
 import Documents from "../components/documents/documents-v1";
 import Contact from "../components/contact/contact-v1";
 import Footer from "../components/footer/footer-v2";
+import Gotop from "../components/gotop";
 
-function Home1() {
+function HomeOne() {
   return (
     <div className="home-main backgroup-body">
       <Header />
@@ -34,8 +35,9 @@ function Home1() {
       <Documents data={dataDocument} />
       <Contact data={dataContact} />
       <Footer />
+      <Gotop/>
     </div>
   );
 }
 
-export default Home1;
+export default HomeOne;

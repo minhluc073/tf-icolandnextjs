@@ -13,11 +13,7 @@ const dataTitle = {
 
 function Contact(props) {
   const { data } = props;
-  //   const [dataTitle] = useState({
-  //     title: "Contact Us",
-  //     subtitle:
-  //       "We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below.",
-  //   });
+ 
 
   return (
     <section className="contact" id="contact">
