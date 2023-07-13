@@ -4,6 +4,7 @@ import Button from "../../button/button-st1";
 import Button2 from "../../button/button-st2";
 import PropTypes from "prop-types";
 import Banneritem from "../banner-item-v2";
+import CountUp from "react-countup";
 
 Banner.propTypes = {
   data: PropTypes.array,
@@ -89,9 +90,39 @@ function Banner(props) {
               </div>
 
               <ul className="content-list">
-                {data.slice(3, 6).map((item) => (
+                {/* {data.slice(3, 6).map((item) => (
                   <Banneritem key={item.id} item={item} />
-                ))}
+                ))} */}
+                <li>
+                  <h5 className="number">
+                    <CountUp end={1} suffix="M+" duration={3} enableScrollSpy />
+                  </h5>
+                  <p>Supply</p>
+                </li>
+                <li>
+                  <h5 className="number">
+                    <CountUp
+                      end={20}
+                      suffix="k+"
+                      duration={3}
+                      enableScrollSpy
+                      scrollSpyDelay={3}
+                    />
+                  </h5>
+                  <p>Market Cap</p>
+                </li>
+                <li>
+                  <h5 className="number">
+                    <CountUp
+                      end={10}
+                      suffix="M+"
+                      duration={3}
+                      enableScrollSpy
+                      scrollSpyDelay={3}
+                    />
+                  </h5>
+                  <p>Holders</p>
+                </li>
               </ul>
             </div>
           </div>

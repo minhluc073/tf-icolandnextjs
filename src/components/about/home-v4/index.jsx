@@ -57,6 +57,7 @@ function About(props) {
                 <Image
                   src={require("../../../assets/images/background/bg-video.jpg")}
                   alt="ICOLand"
+                  style={{ height: "auto" }}
                 />
                 <a
                   className="popup-youtube"
