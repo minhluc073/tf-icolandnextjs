@@ -110,6 +110,8 @@
                 li {
                     position: relative;
                     padding-right: 40px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
 
                     &:nth-last-child(1) {
                         padding-right: 0;
@@ -131,7 +133,6 @@
 
                     .sub-menu {
                         position: absolute;
-                        top: 100%;
                         left: 0;
                         width: 230px;
                         z-index: 99;
@@ -151,6 +152,7 @@
                         transform: translateY(35px);
                         background: $white;
                         box-shadow: 0 0 1.25rem rgb(30 34 40 / 6%);
+                        pointer-events: none;
                         li {
                             padding: 10px 20px;
                             position: relative;
@@ -203,7 +205,8 @@
                     &:hover .sub-menu {
                         opacity: 1;
                         visibility: visible;
-                        transform: translateY(26px);
+                        transform: translateY(20px);
+                        pointer-events: all;
                     }
 
                     &.menu-item-has-children > a {

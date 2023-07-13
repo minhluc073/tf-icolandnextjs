@@ -12,7 +12,7 @@ Banner.propTypes = {
 
 function Banner(props) {
   const { data } = props;
-  const [countdownDate] = useState(new Date("6/30/2022").getTime());
+  const [countdownDate] = useState(new Date("8/30/2023").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,

@@ -1,8 +1,8 @@
-@use '../' as *;
+@use "../" as *;
 
 .banner-top.style-1 {
     padding: 231px 0 99px;
-    background: url('./../../assets/images/background/Slider.jpg') no-repeat;
+    background: url("./../../assets/images/background/Slider.jpg") no-repeat;
     background-size: cover;
 
     @include mobile {
@@ -13,11 +13,11 @@
         .sale-top {
             display: flex;
             align-items: center;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 32px;
             max-width: 379px;
             padding: 4px;
-            
+
             a {
                 font-weight: 700;
                 background: #fff;
@@ -47,23 +47,22 @@
             font-size: 17px;
             margin-top: 12px;
             padding-right: 40%;
-            color: #F6F6F6;
+            color: #f6f6f6;
         }
 
         .button {
-            margin-top: 37px;            
+            margin-top: 37px;
         }
         .content-list {
             margin-top: 94px;
             display: flex;
 
-            
             li {
                 padding-right: 69px;
                 position: relative;
 
                 &::after {
-                    content: '';
+                    content: "";
                     width: 2px;
                     height: 60px;
 
@@ -109,8 +108,7 @@
     .banner-top__sale {
         text-align: right;
         padding-left: 120px;
-    
-        
+
         .sale-content {
             margin-top: -51px;
             padding: 41px 0 0;
@@ -119,8 +117,8 @@
             border-radius: 12px;
             text-align: center;
             border: 2px solid rgba(255, 255, 255, 0.3);
-    
-            .countdown__timer{
+
+            .countdown__timer {
                 margin-top: 28px;
                 .countdown__item {
                     font-size: 36px;
@@ -135,9 +133,9 @@
                     color: $white;
                     display: inline-block;
                     padding-top: 5px;
-    
+
                     position: relative;
-    
+
                     &::after {
                         position: absolute;
                         bottom: -37px;
@@ -146,39 +144,39 @@
                         font-size: 16px;
                         font-weight: 700;
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: "Days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Mins';  
+                        content: "Mins";
                     }
                     &:nth-child(4)::after {
-                        content: 'Secs';  
+                        content: "Secs";
                     }
                 }
             }
-    
+
             .token-bar {
                 margin-top: 71px;
                 padding: 0 38px;
                 .top {
                     @include flex(center, space-between);
                     padding: 0 13px;
-    
+
                     h6 {
                         font-size: 14px;
                         font-weight: 400;
                         span {
-                            color: var(--primary-color) ;
+                            color: var(--primary-color);
                             font-weight: 800;
                         }
                     }
                 }
-    
+
                 .main {
                     .progress-token {
                         background: rgba(255, 255, 255, 0.1);
@@ -186,7 +184,7 @@
                         border-radius: 64px;
                         padding: 4px;
                         p {
-                            background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+                            background: linear-gradient(294.72deg, #ff4581 9.05%, #4388dd 79.28%);
                             border-radius: 64px;
                             max-width: 186px;
                             padding: 4px 17px;
@@ -197,14 +195,14 @@
                         }
                     }
                 }
-    
+
                 .bottom {
                     @include flex(center, center);
                     margin-top: 10px;
                     p {
                         padding: 0 47px;
                         position: relative;
-    
+
                         &::before {
                             @include absolute;
                             left: 50%;
@@ -215,15 +213,13 @@
                         }
                     }
                 }
-                
             }
-    
+
             .sale-bottom {
                 background: rgba(255, 255, 255, 0.06);
                 padding: 21px 0 11px;
                 margin-top: 17px;
-                
-    
+
                 .list-coin {
                     @include flex(center, center);
                     li {
@@ -238,17 +234,17 @@
 
                             @-webkit-keyframes pulse-grow-on-hover {
                                 to {
-                                  -webkit-transform: scale(1.1);
-                                  transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    transform: scale(1.1);
                                 }
-                              }
-                              @keyframes pulse-grow-on-hover {
+                            }
+                            @keyframes pulse-grow-on-hover {
                                 to {
-                                  -webkit-transform: scale(1.1);
-                                  transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    transform: scale(1.1);
                                 }
-                              }
-                    
+                            }
+
                             &:hover {
                                 -webkit-animation-name: pulse-grow-on-hover;
                                 animation-name: pulse-grow-on-hover;
@@ -266,7 +262,7 @@
                 }
             }
         }
-    
+
         @include desktop-1200 {
             padding-left: 0;
             margin-top: 100px;
@@ -274,17 +270,16 @@
         }
         @include mobile {
             padding: 0;
-    
+
             img {
                 width: 100%;
             }
-    
+
             .sale-content .countdown__timer .countdown__item {
                 margin: 0 5px;
             }
         }
     }
-    
 }
 
 .banner-top.style-2 {
@@ -307,7 +302,7 @@
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: #fff;
                 -webkit-text-fill-color: rgb(0 0 0/0%);
-                @include flex(center,flex-start);
+                @include flex(center, flex-start);
             }
         }
         .desc {
@@ -328,13 +323,12 @@
             margin-top: 94px;
             display: flex;
 
-            
             li {
                 padding-right: 69px;
                 position: relative;
 
                 &::after {
-                    content: '';
+                    content: "";
                     width: 2px;
                     height: 60px;
 
@@ -385,12 +379,12 @@
         text-align: right;
         padding-left: 104px;
         margin-top: -60px;
-        
-        
+
         .sale-content {
             margin-top: -164px;
             padding: 24px 0 57px;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, rgba(119, 61, 191, 0.1) 0%, rgba(134, 53, 189, 0.1) 100%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                linear-gradient(90deg, rgba(119, 61, 191, 0.1) 0%, rgba(134, 53, 189, 0.1) 100%);
             backdrop-filter: blur(100px);
             border-radius: 20px;
             text-align: center;
@@ -399,11 +393,11 @@
                 text-transform: uppercase;
             }
 
-            .countdown__timer{
+            .countdown__timer {
                 margin-top: 21px;
                 .countdown__item {
                     font-size: 40px;
-                    font-family: 'Russo One', sans-serif;
+                    font-family: "Russo One", sans-serif;
                     border: 2px solid var(--primary-color);
                     border-radius: 16px;
                     margin: 0 20px;
@@ -429,16 +423,16 @@
                     }
 
                     &:nth-child(1)::after {
-                        content: 'days';  
+                        content: "days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: "Minutes";
                     }
                     &:nth-child(4)::after {
-                        content: 'SECONDS';  
+                        content: "SECONDS";
                     }
                 }
             }
@@ -469,20 +463,21 @@
 
 .banner-top.style-3 {
     padding: 174px 0 99px;
-    background: url('./../../assets/images/background/banner-music.jpg') no-repeat;
+    background: url("./../../assets/images/background/banner-music.jpg") no-repeat;
     background-size: cover;
     position: relative;
 
-    &::before , &::after {
+    &::before,
+    &::after {
         @include absolute;
         width: 100%;
         height: 100%;
     }
     &::before {
-        background: linear-gradient(0.01deg, #080D14 0%, rgba(8, 13, 20, 0.25) 22%);
+        background: linear-gradient(0.01deg, #080d14 0%, rgba(8, 13, 20, 0.25) 22%);
     }
     &::after {
-        background: linear-gradient(89.95deg, #060A0F 0.03%, rgba(7, 10, 15, 0.4) 93.34%);
+        background: linear-gradient(89.95deg, #060a0f 0.03%, rgba(7, 10, 15, 0.4) 93.34%);
     }
     .container {
         position: relative;
@@ -492,7 +487,7 @@
     .banner-top__content {
         padding-top: 43px;
         .title {
-            font-family: 'Russo One';
+            font-family: "Russo One";
             font-weight: 400;
             font-size: 56px;
             line-height: 1.29;
@@ -503,7 +498,7 @@
 
             span {
                 -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: #C004DE;
+                -webkit-text-stroke-color: #c004de;
                 -webkit-text-fill-color: rgb(0 0 0/0%);
             }
         }
@@ -512,7 +507,7 @@
             margin-top: 25px;
             margin-left: 3px;
             padding-right: 55px;
-            color: #E5E5E5;
+            color: #e5e5e5;
         }
 
         .button {
@@ -534,7 +529,7 @@
                     font-size: 35px;
                     letter-spacing: 1px;
                     margin-bottom: 0;
-                    color: #A09FAF;
+                    color: #a09faf;
                 }
                 p {
                     font-size: 16px;
@@ -545,15 +540,13 @@
                     margin-right: 0;
                 }
             }
-            
         }
     }
 
     .banner-top__sale {
         text-align: right;
         padding-left: 123px;
-    
-        
+
         .sale-content {
             margin-top: -170px;
             padding: 26px 0 37px;
@@ -563,7 +556,7 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
             margin-left: 24px;
             margin-right: 24px;
-    
+
             h6 {
                 font-size: 14px;
                 font-weight: 700;
@@ -571,11 +564,11 @@
                 letter-spacing: 2.7px;
                 margin-bottom: 0;
             }
-    
-            .countdown__timer{
+
+            .countdown__timer {
                 margin-top: -4px;
                 .countdown__item {
-                    font-family: 'Russo One';
+                    font-family: "Russo One";
                     font-weight: 400;
                     font-size: 36px;
                     margin: 0 21px;
@@ -585,18 +578,18 @@
                     color: $white;
                     display: inline-block;
                     padding-top: 5px;
-    
+
                     position: relative;
 
                     &::before {
-                        content: ':';
+                        content: ":";
                         position: absolute;
                         top: 5px;
                         right: -23px;
                     }
-    
+
                     &::after {
-                        font-family: 'Inter';
+                        font-family: "Inter";
                         position: absolute;
                         bottom: -14px;
                         left: 0;
@@ -604,18 +597,18 @@
                         font-size: 14px;
                         font-weight: 400;
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: "Days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: "Minutes";
                     }
                     &:nth-child(4)::after {
-                        content: 'Seconds';  
+                        content: "Seconds";
                     }
 
                     &:last-child {
@@ -626,7 +619,7 @@
                 }
             }
         }
-    
+
         @include desktop-1200 {
             padding-left: 0;
             margin-top: 100px;
@@ -634,11 +627,11 @@
         }
         @include mobile {
             padding: 0;
-    
+
             img {
                 width: 100%;
             }
-    
+
             .sale-content .countdown__timer .countdown__item {
                 margin: 0 5px;
             }
@@ -648,7 +641,9 @@
 
 .banner-top.style-4 {
     padding: 189px 0 116px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./../../assets/images/background/bg-banner-top-4.jpg') no-repeat;
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("./../../assets/images/background/bg-banner-top-4.jpg") no-repeat;
     background-size: cover;
     position: relative;
 
@@ -668,10 +663,8 @@
         text-align: center;
         padding: 0 200px;
 
-        
-
         .title {
-            font-family: 'Poppins';
+            font-family: "Poppins";
             font-weight: 700;
             font-size: 56px;
             text-transform: capitalize;
@@ -679,14 +672,14 @@
         }
         .desc {
             font-size: 17px;
-            color: #F6F6F6;
+            color: #f6f6f6;
             padding: 0 60px;
         }
 
         .button {
             margin-top: 46px;
             a {
-               display: inline-block;
+                display: inline-block;
             }
         }
 
@@ -715,13 +708,11 @@
         @include mobile {
             padding: 42px 30px 42px 30px;
         }
-        
 
         .block-text {
             width: 50%;
             .heading {
                 margin-bottom: 12px;
-                
             }
             p {
                 padding-right: 80px;
@@ -735,11 +726,11 @@
         .sale-content {
             width: 50%;
             text-align: right;
-            .countdown__timer{
+            .countdown__timer {
                 .countdown__item {
                     font-size: 36px;
                     font-weight: 600;
-                    background: linear-gradient(153.06deg, #13B8BA -0.31%, #6A0A6B 99.69%);
+                    background: linear-gradient(153.06deg, #13b8ba -0.31%, #6a0a6b 99.69%);
                     backdrop-filter: blur(10px);
                     border-radius: 8px;
 
@@ -752,12 +743,12 @@
                     margin-left: 16px;
                     text-align: center;
                     color: #fff;
-    
+
                     position: relative;
                     @include mobile {
                         margin-bottom: 20px;
                     }
-    
+
                     &::after {
                         position: absolute;
                         bottom: 21px;
@@ -767,18 +758,18 @@
                         font-size: 17px;
                         color: rgba(255, 255, 255, 0.6);
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: "Days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: "Minutes";
                     }
                     &:nth-child(4)::after {
-                        content: 'Seconds';  
+                        content: "Seconds";
                     }
                 }
             }
@@ -788,7 +779,7 @@
 
             .block-text {
                 width: 100%;
-            } 
+            }
 
             .sale-content {
                 width: 100%;
@@ -801,7 +792,7 @@
 
 .banner-top.style-5 {
     padding: 247px 0 180px;
-    background: url('./../../assets/images/background/banner-top-6.jpg') no-repeat;
+    background: url("./../../assets/images/background/banner-top-6.jpg") no-repeat;
     background-size: cover;
     position: relative;
 
@@ -814,16 +805,15 @@
         @include absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(163.21deg, #011F63 -1.53%, rgba(5, 45, 133, 0.12) 100.68%);
+        background: linear-gradient(163.21deg, #011f63 -1.53%, rgba(5, 45, 133, 0.12) 100.68%);
     }
 
     .banner-top__content {
-
         .sub-title {
             font-weight: 700;
             font-size: 14px;
             text-transform: uppercase;
-            color: #48D6D2;
+            color: #48d6d2;
             letter-spacing: 2.8px;
         }
 
@@ -836,7 +826,7 @@
         }
         .desc {
             font-size: 20px;
-            color: #FFFFFF;
+            color: #ffffff;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             padding-right: 200px;
         }
@@ -844,21 +834,20 @@
         .button {
             margin-top: 44px;
             display: flex;
-            
+
             a {
-               display: inline-block;
-               margin-right: 22px;
+                display: inline-block;
+                margin-right: 22px;
             }
             @include mobile {
-                flex-wrap: wrap; 
+                flex-wrap: wrap;
                 a {
                     margin-bottom: 15px;
                 }
-            } 
+            }
         }
 
         @include desktop-1200 {
-
             .desc {
                 padding: 0;
             }
@@ -888,51 +877,54 @@
 .banner-top.style-6 {
     padding: 221px 0 33px;
 
-    background: url('./../../assets/images/background/bg-banner-nft.jpg') no-repeat;
+    background: url("./../../assets/images/background/bg-banner-nft.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
 
     .block-text {
         .heading {
-            
-            font-family: 'Rowdies';
+            font-family: "Rowdies";
             font-weight: 700;
             font-size: 56px;
             text-transform: uppercase;
-            background: -webkit-linear-gradient(-86deg, rgba(182, 33, 254, 1) 5%, rgba(31, 209, 249, 1) 53%, rgba(182, 33, 254, 1) 91%);
+            background: -webkit-linear-gradient(
+                -86deg,
+                rgba(182, 33, 254, 1) 5%,
+                rgba(31, 209, 249, 1) 53%,
+                rgba(182, 33, 254, 1) 91%
+            );
             -webkit-background-clip: text;
             -webkit-text-stroke: 4px transparent;
             color: #fff;
             margin-bottom: 27px;
         }
 
-        .sub-heading  {
-
-            font-size: 24px;    
+        .sub-heading {
+            font-size: 24px;
             text-transform: capitalize;
         }
     }
 
     .banner-top__sale {
         background: rgba(255, 255, 255, 0.04);
-        border: 2px solid #5C1594;
+        border: 2px solid #5c1594;
         backdrop-filter: blur(24px);
         border-radius: 12px;
 
         margin-top: 56px;
         padding: 38px 38px 38px 22px;
-        @include flex(center,space-between);
-    
+        @include flex(center, space-between);
+
         .js-countdown {
             width: 40%;
-            .countdown__timer{
+            .countdown__timer {
                 .countdown__item {
                     font-size: 36px;
                     font-weight: 600;
-                    background: linear-gradient(153.06deg, #B621FE -0.31%, #1FD1F9 99.69%);
+                    background: linear-gradient(153.06deg, #b621fe -0.31%, #1fd1f9 99.69%);
                     backdrop-filter: blur(10px);
                     border-radius: 8px;
-    
+
                     max-width: 114px;
                     width: 100%;
                     height: 114px;
@@ -942,12 +934,12 @@
                     margin-left: 16px;
                     text-align: center;
                     color: #fff;
-    
+
                     position: relative;
                     @include mobile {
                         margin-bottom: 20px;
                     }
-    
+
                     &::after {
                         position: absolute;
                         bottom: 21px;
@@ -957,24 +949,22 @@
                         font-size: 17px;
                         color: #fff;
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: "Days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: "Minutes";
                     }
                     &:nth-child(4)::after {
-                        content: 'Seconds';  
+                        content: "Seconds";
                     }
                 }
             }
         }
-
-        
 
         .token-bar {
             margin-top: 9px;
@@ -988,7 +978,7 @@
                     font-size: 14px;
                     font-weight: 400;
                     span {
-                        color: #fff ;
+                        color: #fff;
                         font-weight: 800;
                     }
                 }
@@ -1001,7 +991,7 @@
                     border-radius: 64px;
                     padding: 4px;
                     p {
-                        background: linear-gradient(153.06deg, #B621FE -0.31%, #1FD1F9 99.69%);
+                        background: linear-gradient(153.06deg, #b621fe -0.31%, #1fd1f9 99.69%);
                         border-radius: 64px;
                         max-width: 186px;
                         padding: 4px 17px;
@@ -1031,7 +1021,6 @@
                     }
                 }
             }
-            
         }
 
         .list-coin {
@@ -1050,8 +1039,6 @@
             flex-wrap: wrap;
             justify-content: center;
 
-            
-
             .js-countdown {
                 width: 100%;
                 text-align: center;
@@ -1059,7 +1046,7 @@
 
             .block-text {
                 width: 100%;
-            } 
+            }
 
             .sale-content {
                 width: 100%;
@@ -1078,15 +1065,15 @@
 
     .banner-top__main {
         margin-top: 120px;
-        
+
         .buy-token-box {
             position: relative;
             z-index: 1;
-            
+
             max-width: 690px;
             margin: 0 auto;
             margin-top: -52px;
-            background: linear-gradient(180deg, #6B041D 0%, rgba(36, 8, 16, 0.12) 104.15%);
+            background: linear-gradient(180deg, #6b041d 0%, rgba(36, 8, 16, 0.12) 104.15%);
             border-radius: 20px 20px 0px 0px;
             padding: 64px 80px;
 
@@ -1094,13 +1081,13 @@
                 @include absolute;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(180deg, #33229D 0%, rgba(29, 12, 57, 0.12) 100%);
+                background: linear-gradient(180deg, #33229d 0%, rgba(29, 12, 57, 0.12) 100%);
                 border-radius: 20px 20px 0px 0px;
                 z-index: -1;
             }
 
             .heading {
-                font-family: 'Rowdies';
+                font-family: "Rowdies";
                 font-weight: 700;
                 letter-spacing: 0.7px;
                 margin-bottom: 20px;
@@ -1108,7 +1095,7 @@
             p {
                 margin-bottom: 38px;
             }
-            a {    
+            a {
                 padding: 14px 48px;
             }
             .banner-nft {
@@ -1129,31 +1116,30 @@
                     background-size: cover;
                     min-width: 340px;
                     min-height: 400px;
-                    @include flex(center,center);
-                    .swiper-slide-shadow-left , .swiper-slide-shadow-right {
+                    @include flex(center, center);
+                    .swiper-slide-shadow-left,
+                    .swiper-slide-shadow-right {
                         display: none;
                     }
-                  }
-            
-                  .swiper-slide img {
+                }
+
+                .swiper-slide img {
                     display: block;
                     height: auto;
                     border-radius: 24px;
                     width: 100%;
                     height: 100%;
-                  }
+                }
             }
 
             .title {
-                font-family: 'Rowdies';
+                font-family: "Rowdies";
                 font-weight: 700;
                 margin-bottom: 22px;
             }
             p {
                 color: #fff;
             }
-        
-              
         }
     }
 }
@@ -1170,12 +1156,12 @@
         .desc {
             font-size: 17px;
             padding-right: 115px;
-        } 
+        }
         .button {
             margin-top: 36px;
             a {
                 padding: 15px 39px;
-   
+
                 display: inline-block;
                 margin-right: 15px;
             }
@@ -1184,20 +1170,19 @@
             margin-top: 79px;
             display: flex;
 
-            
             li {
                 padding-right: 103px;
                 position: relative;
 
                 &::after {
-                    content: '';
+                    content: "";
                     width: 2px;
                     height: 60px;
 
                     position: absolute;
                     top: 19%;
-                    right: 17%;              
-                    background: #B4E116;
+                    right: 17%;
+                    background: #b4e116;
                 }
                 &:nth-last-child(1) {
                     padding-right: 0;
@@ -1239,10 +1224,7 @@
         margin-top: -7px;
         position: relative;
         margin-left: 30px;
-        
 
-        
-        
         .sale-content {
             @include absolute;
             top: auto;
@@ -1261,7 +1243,7 @@
                 letter-spacing: 2.8px;
             }
 
-            .countdown__timer{
+            .countdown__timer {
                 .countdown__item {
                     font-size: 36px;
                     font-weight: 600;
@@ -1273,7 +1255,7 @@
                     position: relative;
 
                     &::before {
-                        content: ':';
+                        content: ":";
                         position: absolute;
                         top: 0;
                         right: -50px;
@@ -1293,16 +1275,16 @@
                     }
 
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: "Days";
                     }
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: "Hours";
                     }
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: "Minutes";
                     }
                     &:nth-child(4)::after {
-                        content: 'Seconds';  
+                        content: "Seconds";
                     }
                 }
             }
@@ -1343,8 +1325,8 @@
             margin-top: 46px;
             a {
                 display: inline-block;
-                background: #48D6D2;
-                color: #13316B;
+                background: #48d6d2;
+                color: #13316b;
                 padding: 14px 41px;
                 border-radius: 12px;
             }
@@ -1364,10 +1346,10 @@
         .banner-top__sale {
             background: #102250;
             border-radius: 20px;
-    
+
             margin-top: -76px;
             padding: 10px 38px 26px 40px;
-            @include flex(center,space-between);
+            @include flex(center, space-between);
 
             .countdown {
                 width: 30%;
@@ -1377,20 +1359,18 @@
                     margin-bottom: 8px;
                 }
             }
-        
+
             .js-countdown {
-                
-                .countdown__timer{
-                
+                .countdown__timer {
                     .countdown__item {
                         font-size: 24px;
                         font-weight: 600;
 
-                        border: 2px solid #48D6D2;
+                        border: 2px solid #48d6d2;
                         border-radius: 8px;
-                        
-                        color: #38CBAC;
-        
+
+                        color: #38cbac;
+
                         max-width: 48px;
                         width: 100%;
                         height: 48px;
@@ -1398,16 +1378,14 @@
                         display: inline-block;
                         margin-right: 43px;
                         text-align: center;
-       
-        
+
                         position: relative;
 
-                        
                         @include mobile {
                             margin-bottom: 20px;
                             margin-right: 20px;
                         }
-        
+
                         &::after {
                             position: absolute;
                             bottom: -30px;
@@ -1417,46 +1395,44 @@
                             font-size: 14px;
                             color: #fff;
                         }
-        
+
                         &:nth-child(1)::after {
-                            content: 'Days';  
+                            content: "Days";
                         }
                         &:nth-child(2)::after {
-                            content: 'Hours';  
+                            content: "Hours";
                         }
                         &:nth-child(3)::after {
-                            content: 'Mins';  
+                            content: "Mins";
                         }
                         &:nth-child(4)::after {
-                            content: 'Secs';  
+                            content: "Secs";
                         }
                     }
                 }
             }
-    
-            
-    
+
             .token-bar {
                 margin-top: 20px;
                 padding: 0 40px 0 2px;
                 width: 40%;
                 @include mobile {
-                    padding: 0
+                    padding: 0;
                 }
                 .top {
                     @include flex(center, space-between);
                     padding: 0 13px;
-    
+
                     h6 {
                         font-size: 14px;
                         font-weight: 400;
                         span {
-                            color: #fff ;
+                            color: #fff;
                             font-weight: 800;
                         }
                     }
                 }
-    
+
                 .main {
                     .progress-token {
                         background: rgba(255, 255, 255, 0.1);
@@ -1464,7 +1440,7 @@
                         border-radius: 6px;
                         padding: 4px;
                         p {
-                            background: #48D6D2;
+                            background: #48d6d2;
                             border-radius: 6px;
                             max-width: 186px;
                             padding: 4px 17px;
@@ -1475,7 +1451,7 @@
                         }
                     }
                 }
-    
+
                 .bottom {
                     @include flex(center, center);
                     margin-top: 10px;
@@ -1483,7 +1459,7 @@
                         padding: 0 47px;
                         position: relative;
                         margin-bottom: 0;
-    
+
                         &::before {
                             @include absolute;
                             left: 50%;
@@ -1494,9 +1470,8 @@
                         }
                     }
                 }
-                
             }
-    
+
             .list-coin {
                 margin-top: 15px;
                 background: rgba(255, 255, 255, 0.06);
@@ -1509,7 +1484,7 @@
                         font-size: 24px;
 
                         &::before {
-                            color: #48D6D2;
+                            color: #48d6d2;
                         }
                     }
                 }
@@ -1518,18 +1493,16 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 30px;
-    
-                
-    
+
                 .countdown {
                     width: 100%;
                     text-align: center;
                 }
-    
+
                 .block-text {
                     width: 100%;
-                } 
-    
+                }
+
                 .sale-content {
                     width: 100%;
                     margin-top: 30px;
@@ -1549,7 +1522,6 @@
         }
     }
 }
-
 
 @include mobile {
     .banner-top.style-8 .banner-top__content {
@@ -1624,3 +1596,7 @@
         padding-left: 12px;
     }
 }
+
+// .banner-top.style-6 .banner-top__main .buy-token-box .swiper .swiper-slide.swiper-slide-active img {
+//     width: 500px;
+// }
