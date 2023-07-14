@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 About.propTypes = {
   item: PropTypes.object,
 };

@@ -7,14 +7,6 @@ const dataTitle = {
 };
 
 function Footer(props) {
-  // const [dataTitle] = useState(
-  //     {
-  //         title: "Don't miss out, Stay updated",
-  //         desc: 'Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial knowledge to become successful investors globally',
-  //         author:'Themesflat'
-  //     }
-  // )
-
   return (
     <>
       <footer className="footer style-2">

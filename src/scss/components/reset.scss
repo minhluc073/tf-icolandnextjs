@@ -1,8 +1,4 @@
-@use '../' as *;
-
-
-
-
+@use "../" as *;
 
 * {
     margin: 0;
@@ -79,7 +75,7 @@ a {
     text-decoration: none;
     color: unset;
     transition: all 0.3s;
-    cursor: pointer;
+    cursor: pointer !important;
     display: inline-block;
     color: $white;
     &:hover {

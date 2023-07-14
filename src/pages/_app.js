@@ -10,8 +10,10 @@ import "@/src/scss/components/section.scss";
 import "@/src/scss/components/_progress.scss";
 import "@/src/scss/components/form.scss";
 import Preloader from "@/src/components/preloader";
+
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import AnimateCursor from "@/src/components/cursor";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -24,7 +26,18 @@ function MyApp({ Component, pageProps }) {
       setLoading(true);
     }, 800);
   }, []);
-  return <>{!loading ? <Preloader /> : <Component {...pageProps} />}</>;
+  return (
+    <>
+      {!loading ? (
+        <Preloader />
+      ) : (
+        <>
+          {/* <AnimateCursor /> */}
+          <Component {...pageProps} />
+        </>
+      )}
+    </>
+  );
 }
 
 export default MyApp;
