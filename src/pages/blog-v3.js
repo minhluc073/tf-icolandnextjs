@@ -1,5 +1,4 @@
 import React from "react";
-
 import Blogitem from "../components/blog/blog-item7";
 import dataBlog from "../data/data-blog";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import PageTitle from "../components/page-title";
 import Header from "../components/header";
 import Footer from "../components/footer/footer-v2";
 import Sidebar from "../components/sidebar/side-bar-v2";
+import Gotop from "../components/gotop";
 function Blogv2(props) {
   return (
     <div className="home-blog backgroup-body">
@@ -26,16 +26,16 @@ function Blogv2(props) {
                   ))}
                   <ul className="pagination">
                     <li>
-                      <Link to="#">1</Link>
+                      <Link href="#">1</Link>
                     </li>
                     <li className="active">
-                      <Link to="#">2</Link>
+                      <Link href="#">2</Link>
                     </li>
                     <li>
-                      <Link to="#">3</Link>
+                      <Link href="#">3</Link>
                     </li>
                     <li>
-                      <Link to="#">
+                      <Link href="#">
                         <svg
                           width="16"
                           height="14"
@@ -70,6 +70,7 @@ function Blogv2(props) {
         </div>
       </section>
       <Footer />
+      <Gotop />
     </div>
   );
 }

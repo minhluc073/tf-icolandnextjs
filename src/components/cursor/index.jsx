@@ -9,13 +9,13 @@ function AnimateCursor() {
       innerStyle={{
         backgroundColor: "#ff4581",
       }}
-      // outerStyle={{
-      //   mixBlendMode: "exclusion",
-      // }}
+      outerStyle={{
+        border: "2px solid #ff4581",
+      }}
       // color="#ff4581"
-      outerAlpha={0.5}
+      outerAlpha={0}
       innerScale={1}
-      outerScale={1.7}
+      outerScale={1.2}
       hasBlendMode={true}
       clickables={[
         "a",
