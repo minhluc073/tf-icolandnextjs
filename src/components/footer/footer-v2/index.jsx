@@ -28,7 +28,7 @@ function Footer(props) {
                       type="submit"
                       id="subscribe-button1"
                     >
-                      {" "}
+                     
                       <span className="effect">SUBSCRIBE</span>
                     </button>
                   </form>
@@ -76,7 +76,7 @@ function Footer(props) {
             <div className="row">
               <div className="col-md-12">
                 <p>
-                  © 2022. All rights reserved by{" "}
+                  © 2023. All rights reserved by
                   <Link href="https://themeforest.net/user/themesflat/portfolio">
                     {dataTitle.author}
                   </Link>

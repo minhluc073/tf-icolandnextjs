@@ -118,7 +118,7 @@ const menus = [
       {
         id: 1,
         sub: "About Us",
-        links: "/about",
+        links: "/about-us",
       },
       {
         id: 2,

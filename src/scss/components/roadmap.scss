@@ -1222,6 +1222,9 @@
         p {
             padding: 0 280px;
             color: #f6f6f6;
+            @include desktop-1200 {
+                padding: 0;
+            }
         }
     }
     .container-fluid {
