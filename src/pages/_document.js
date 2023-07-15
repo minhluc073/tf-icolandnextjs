@@ -21,7 +21,30 @@ export default function Document() {
           crossorigin="anonymous"
         />
         {/* font */}
-        {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" /> */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+        />
       </Head>
       <title>ICOLand | ICO landing page & ICO Crypto Next Js Template</title>
       <body>
