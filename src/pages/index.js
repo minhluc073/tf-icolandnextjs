@@ -19,7 +19,6 @@ import Documents from "../components/documents/documents-v1";
 import Contact from "../components/contact/contact-v1";
 import Footer from "../components/footer/footer-v2";
 import Gotop from "../components/gotop";
-import AnimateCursor from "@/src/components/cursor";
 
 function HomeOne() {
   return (

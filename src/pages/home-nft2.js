@@ -8,7 +8,7 @@ import dataTeam from "../data/data-team";
 import dataFaq from "../data/data-faq";
 import Header from "../components/header/header-v2";
 import Banner from "../components/banner/banner-v3";
-import Partner from "../components/partner/parner-v1";
+import Partner from "../components/partner/partner-v1";
 import About from "../components/about/home-v3";
 import Feature from "../components/features/features-v2";
 import Documents from "../components/documents/documents-v3";

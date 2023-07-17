@@ -14,7 +14,7 @@ import Team from "../components/team/team-v7";
 import Roadmap from "../components/roadmap/roadmap-v7";
 import Token from "../components/token-details/token-v3";
 import Feature from "../components/features/features-v6";
-import Parner from "../components/partner/parter-v3";
+import Partner from "../components/partner/partner-v3";
 import Blog from "../components/blog/blog-v4";
 import Faq from "../components/faq/faq-v6";
 import Footer from "../components/footer/footer-v7";
@@ -30,7 +30,7 @@ function HomeDefi3(props) {
       <Roadmap data={dataRoadmap} />
       <Token />
       <Feature data={dataFeature} />
-      <Parner data={dataPartner} />
+      <Partner data={dataPartner} />
       <Blog data={dataBlog} />
       <Faq data={dataFaq} />
       <Footer />

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import ParnerItem from "../parner-item";
+import PartnerItem from "../partner-item";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-Parner.propTypes = {
+Partner.propTypes = {
   data: PropTypes.array,
 };
 
@@ -13,7 +13,7 @@ const dataTile = {
   desc: "Join the industry leaders to discuss where the markets are heading. We accept token payments.",
 };
 
-function Parner(props) {
+function Partner(props) {
   const { data } = props;
 
   // const [dataTile] = useState(
@@ -68,7 +68,7 @@ function Parner(props) {
                   {data.slice(6, 13).map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="image">
-                        <ParnerItem item={item} />
+                        <PartnerItem item={item} />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -107,7 +107,7 @@ function Parner(props) {
                   {data.slice(12, 21).map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="image">
-                        <ParnerItem item={item} />
+                        <PartnerItem item={item} />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -146,7 +146,7 @@ function Parner(props) {
                   {data.slice(18, 27).map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="image">
-                        <ParnerItem item={item} />
+                        <PartnerItem item={item} />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -160,4 +160,4 @@ function Parner(props) {
   );
 }
 
-export default Parner;
+export default Partner;

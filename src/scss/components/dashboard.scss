@@ -260,10 +260,12 @@
     }
 
     .dashboard__content {
-        padding: 73px 46px 165px 29px;
+        padding: 73px 46px 40px 29px;
         padding-left: 417px;
         transition: all 0.3s ease;
         position: relative;
+        height: 100vh;
+        overflow: auto;
         @include desktop-1400 {
             padding: 23px 29px;
         }
@@ -473,6 +475,7 @@
                             border-radius: 20px;
                             margin-bottom: 16px;
                             width: 33.33%;
+                            height: auto;
                             &:nth-child(1) {
                                 clip-path: polygon(
                                     0 0,
@@ -1116,6 +1119,7 @@
     .faq__images {
         img {
             width: 100%;
+            height: auto;
         }
     }
 }

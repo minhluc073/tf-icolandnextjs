@@ -15,7 +15,7 @@ import Tokendetails from "../components/token-details/token-details-v3";
 import Token from "../components/token-details/token-v4";
 import Team from "../components/team/team-v8";
 import Blog from "../components/blog/blog-v5";
-import Parner from "../components/partner/parter-v4";
+import Partner from "../components/partner/partner-v4";
 import Faq from "../components/faq/faq-v7";
 import Footer from "../components/footer/footer-v5";
 import Gotop from "../components/gotop";
@@ -32,7 +32,7 @@ function HomeDefi4(props) {
       <Token />
       <Team data={dataTeam} />
       <Blog data={dataBlog} />
-      <Parner data={dataPartner} />
+      <Partner data={dataPartner} />
       <Faq data={dataFaq} />
       <Footer />
       <Gotop />

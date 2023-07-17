@@ -133,12 +133,12 @@ const menus = [
       {
         id: 4,
         sub: "Documents",
-        links: "/document",
+        links: "/document-element",
       },
       {
         id: 5,
         sub: "Our Team",
-        links: "/team",
+        links: "/our-team",
       },
       {
         id: 6,
