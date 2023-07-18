@@ -297,6 +297,7 @@ function Dashboard(props) {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }

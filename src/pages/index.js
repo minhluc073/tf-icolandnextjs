@@ -21,6 +21,7 @@ import Footer from "../components/footer/footer-v2";
 import Gotop from "../components/gotop";
 
 function HomeOne() {
+  
   return (
     <>
       <div className="home-main backgroup-body">
@@ -37,6 +38,7 @@ function HomeOne() {
         <Contact data={dataContact} />
         <Footer />
         <Gotop />
+        
       </div>
     </>
   );

@@ -2,7 +2,7 @@ const menus = [
   {
     id: 1,
     name: "Home Page",
-    links: "#",
+
     namesub: [
       {
         id: 1,
@@ -48,8 +48,8 @@ const menus = [
   },
   {
     id: 2,
-    name: "Home Dashboad",
-    links: "#",
+    name: "Home Dashboard",
+
     namesub: [
       {
         id: 1,
@@ -86,7 +86,7 @@ const menus = [
   {
     id: 3,
     name: "Blog Page",
-    links: "#",
+
     namesub: [
       {
         id: 1,
@@ -113,7 +113,7 @@ const menus = [
   {
     id: 5,
     name: "Elements",
-    links: "#",
+
     namesub: [
       {
         id: 1,
@@ -163,19 +163,18 @@ const menus = [
       {
         id: 10,
         sub: "Faq",
-        links: "/Faq",
+        links: "/faq",
       },
       {
         id: 11,
         sub: "Icon",
-        links: "/Icon",
+        links: "/icon",
       },
     ],
   },
   {
     id: 6,
     name: "Pages",
-    links: "#",
     namesub: [
       {
         id: 1,
@@ -195,7 +194,7 @@ const menus = [
       {
         id: 4,
         sub: "Coming Soon",
-        links: "/Comingsoon",
+        links: "/comingsoon",
       },
     ],
   },

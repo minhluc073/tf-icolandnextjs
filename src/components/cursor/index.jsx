@@ -1,21 +1,24 @@
 import React from "react";
-import AnimatedCursor from "react-animated-cursor";
+import dynamic from "next/dynamic";
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
 
-function AnimateCursor() {
+function AnimateCursor(props) {
   return (
     <AnimatedCursor
       innerSize={8}
       outerSize={30}
       innerStyle={{
-        backgroundColor: "#ff4581",
+        backgroundColor: props.backgroundColor,
       }}
       outerStyle={{
-        border: "2px solid #ff4581",
+        border: `2px solid ${props.backgroundColor}`,
       }}
-      // color="#ff4581"
+      showSystemCursor={true}
       outerAlpha={0}
       innerScale={1}
-      outerScale={1.2}
+      outerScale={1.4}
       hasBlendMode={true}
       clickables={[
         "a",
