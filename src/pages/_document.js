@@ -9,7 +9,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
         />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
