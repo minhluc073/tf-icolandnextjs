@@ -90,7 +90,7 @@ function Dashboard(props) {
           </li>
           <li>
             <Link href="/dashboard-faq" className="active">
-              <span className="active"></span>FaQs
+              <span className="icon-team"></span>FaQs
             </Link>
           </li>
           <li>

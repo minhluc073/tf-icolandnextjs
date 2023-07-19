@@ -1020,7 +1020,7 @@
                         border: none;
                         &::after {
                             @include transition3;
-                            background: rgba(180, 225, 22, 0.8);
+                            background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%) !important;
                             font-family: "icomoon";
                             font-size: 16px;
                             min-width: 40px;
@@ -1032,7 +1032,7 @@
                             @include flex(center, center);
                             transform: rotate(0);
                             content: "\e954";
-                            color: #000;
+                            color: rgb(255, 255, 255);
                         }
                         &.collapsed {
                             &::after {

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 function Gotop() {
   const [isVisible, setIsVisible] = useState(false);

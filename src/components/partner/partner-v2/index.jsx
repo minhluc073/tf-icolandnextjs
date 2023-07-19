@@ -16,13 +16,6 @@ const dataTile = {
 function Partner(props) {
   const { data } = props;
 
-  // const [dataTile] = useState(
-  //     {
-  //         title: 'Strategic Partners',
-  //         desc : 'Join the industry leaders to discuss where the markets are heading. We accept token payments.'
-  //     }
-  // )
-
   return (
     <section className="section-partner style-1 mobie-pb0" id="partner">
       <div className="container">

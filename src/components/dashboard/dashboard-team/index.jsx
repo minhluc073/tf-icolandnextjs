@@ -50,7 +50,7 @@ function Dashboard(props) {
           </li>
           <li>
             <Link href="/dashboard-features">
-              <span></span>Our Feature
+              <span className="icon-menu"></span>Our Feature
             </Link>
           </li>
           <li>
@@ -140,7 +140,7 @@ function Dashboard(props) {
               </Link>
             </li>
           </ul>
-          <p className="fs-14">© 2022. All rights reserved by Themesflat</p>
+          <p className="fs-14">© 2023. All rights reserved by Themesflat</p>
         </div>
       </nav>
       <div className={`dashboard__content ${toggleClassclick}`}>

@@ -47,65 +47,65 @@ const Header = () => {
     }
   };
 
-  const handleForceActive = (name) => {
-    if (name === "Home Page") {
-      switch (router.pathname) {
-        case "/":
-        case "/home-nft":
-        case "/home-nft2":
-        case "/home-music":
-        case "/home-defi-01":
-        case "/home-defi-02":
-        case "/home-defi-03":
-        case "/home-defi-04":
-          return true;
+  // const handleForceActive = (name) => {
+  //   if (name === "Home Page") {
+  //     switch (router.pathname) {
+  //       case "/":
+  //       case "/home-nft":
+  //       case "/home-nft2":
+  //       case "/home-music":
+  //       case "/home-defi-01":
+  //       case "/home-defi-02":
+  //       case "/home-defi-03":
+  //       case "/home-defi-04":
+  //         return true;
 
-        default: {
-          return false;
-        }
-      }
-    } else if (name === "Blog Page") {
-      switch (router.pathname) {
-        case "/blog-v1":
-        case "/blog-v2":
-        case "/blog-v3":
-          return true;
+  //       default: {
+  //         return false;
+  //       }
+  //     }
+  //   } else if (name === "Blog Page") {
+  //     switch (router.pathname) {
+  //       case "/blog-v1":
+  //       case "/blog-v2":
+  //       case "/blog-v3":
+  //         return true;
 
-        default: {
-          return false;
-        }
-      }
-    } else if (name === "Elements") {
-      switch (router.pathname) {
-        case "/about-us":
-        case "/features":
-        case "/roadmap":
-        case "/document-element":
-        case "/our-team":
-        case "/partner":
-        case "/token":
-        case "/button":
-        case "/footer":
-        case "/faq":
-        case "/icon":
-          return true;
-        default: {
-          return false;
-        }
-      }
-    } else if (name === "Pages") {
-      switch (router.pathname) {
-        case "/sign-in":
-        case "/sign-up":
-        case "/404":
-        case "/Comingsoon":
-          return true;
-        default: {
-          return false;
-        }
-      }
-    }
-  };
+  //       default: {
+  //         return false;
+  //       }
+  //     }
+  //   } else if (name === "Elements") {
+  //     switch (router.pathname) {
+  //       case "/about-us":
+  //       case "/features":
+  //       case "/roadmap":
+  //       case "/document-element":
+  //       case "/our-team":
+  //       case "/partner":
+  //       case "/token":
+  //       case "/button":
+  //       case "/footer":
+  //       case "/faq":
+  //       case "/icon":
+  //         return true;
+  //       default: {
+  //         return false;
+  //       }
+  //     }
+  //   } else if (name === "Pages") {
+  //     switch (router.pathname) {
+  //       case "/sign-in":
+  //       case "/sign-up":
+  //       case "/404":
+  //       case "/Comingsoon":
+  //         return true;
+  //       default: {
+  //         return false;
+  //       }
+  //     }
+  //   }
+  // };
 
   return (
     <header
@@ -138,11 +138,7 @@ const Header = () => {
                         onClick={() => handleDropdown(idx)}
                         className={`menu-item ${
                           data.namesub ? "menu-item-has-children" : ""
-                        } ${
-                          handleForceActive(data.name) || activeIndex === idx
-                            ? "active"
-                            : ""
-                        }`}
+                        } ${activeIndex === idx ? "active" : ""}`}
                       >
                         {data?.links ? (
                           <Link href={`${data?.links}`}>{data.name}</Link>

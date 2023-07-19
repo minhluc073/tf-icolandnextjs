@@ -27,14 +27,13 @@ function Partner(props) {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-
                 991: {
                   slidesPerView: 4,
                   spaceBetween: 30,
                 },
               }}
             >
-              {data.map((item) => (
+              {data.slice(0, 5).map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="image">
                     <PartnerItem item={item} />

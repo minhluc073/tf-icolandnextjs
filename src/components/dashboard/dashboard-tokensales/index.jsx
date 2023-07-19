@@ -42,6 +42,8 @@ function Dashboard(props) {
     minutes: 0,
     seconds: 0,
   });
+  const [btnState, setbtnState] = useState(false);
+  const [menuState, setmenuState] = useState(false);
 
   useEffect(() => {
     setInterval(() => setNewTime(), 1000);
@@ -77,8 +79,6 @@ function Dashboard(props) {
     }
   };
 
-  const [btnState, setbtnState] = useState(false);
-  const [menuState, setmenuState] = useState(false);
   function handleClick() {
     setbtnState((btnState) => !btnState);
   }
@@ -297,7 +297,6 @@ function Dashboard(props) {
           </div>
         </div>
       </div>
-      
     </section>
   );
 }
