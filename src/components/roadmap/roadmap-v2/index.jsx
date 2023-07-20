@@ -13,14 +13,9 @@ Roadmap.propTypes = {
 
 function Roadmap(props) {
   const { data } = props;
-  //   const [dataRoadmap] = useState({
-  //     title: "Roadmap",
-  //     subtitle:
-  //       "The most technologically advanced species will not stop any time soon...",
-  //   });
 
   return (
-    <section className="road-map style-1" id="roadmap">
+    <section className="road-map style-1 mobie-pb0" id="roadmap">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

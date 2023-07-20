@@ -36,35 +36,6 @@ const dataTab = [
 
 function Faq(props) {
   const { data } = props;
-  // const [dataFaq] = useState(
-  //     {
-  //         title: 'Have any Question? ',
-  //     }
-  // )
-
-  //   const [dataTab] = useState([
-  //     {
-  //       id: 1,
-  //       title: "General",
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "Pre ICO & ICO",
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "Token",
-  //     },
-  //     {
-  //       id: 4,
-  //       title: "Client",
-  //     },
-  //     {
-  //       id: 5,
-  //       title: "Legal",
-  //     },
-  //   ]);
-
   return (
     <section className="section-faq style-1" id="faq">
       <div className="container">
@@ -88,35 +59,35 @@ function Faq(props) {
                       </Tab>
                     ))}
                   </TabList>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(0, 4).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(0, 4).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(0, 4).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(0, 4).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(0, 4).map((item) => (
                         <AccordionItem key={item.id} item={item} />

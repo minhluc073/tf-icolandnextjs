@@ -12,14 +12,9 @@ const dataRoadmap = {
 };
 function Roadmap(props) {
   const { data } = props;
-  // const [dataRoadmap] = useState({
-  //   title: "Roadmap",
-  //   subtitle:
-  //     "The use of cryptocurrencies has become more widespread, The origin platform idea. Development of the concept and business plan.",
-  // });
 
   return (
-    <section className="road-map style-2" id="roadmap">
+    <section className="road-map style-2 mobie-pb0" id="roadmap">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

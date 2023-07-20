@@ -21,7 +21,7 @@ function Documents(props) {
   //   });
 
   return (
-    <section className="document style-1" id="document">
+    <section className="document style-1 mobie-pb0" id="document">
       <div className="container">
         <div className="row">
           <div className="document__main">

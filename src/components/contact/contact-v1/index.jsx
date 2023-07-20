@@ -13,7 +13,6 @@ const dataTitle = {
 
 function Contact(props) {
   const { data } = props;
- 
 
   return (
     <section className="contact" id="contact">
@@ -33,13 +32,14 @@ function Contact(props) {
           <div className="col-md-6">
             <div className="contact__form">
               <form action="#">
-                <input type="text" placeholder="Full Name" />
-                <input type="email" placeholder="Email" />
-                <input type="tel" placeholder="Phone Number" />
+                <input type="text" placeholder="Full Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="tel" placeholder="Phone Number" required />
                 <textarea
                   id="exampleFormControlTextarea1"
                   rows="3"
                   placeholder="Message"
+                  required
                 ></textarea>
 
                 <button type="submit" className="btn-action">

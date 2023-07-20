@@ -1,4 +1,10 @@
-@use '../' as *;
+@use "../" as *;
+
+.accordion-collapse {
+    -webkit-transition-delay: 0.8s !important;
+    transition-delay: 0.8s !important;
+    transition: height 0.8s ease !important;
+}
 
 .section-faq.style-1 {
     padding: 61px 0;
@@ -14,16 +20,15 @@
                 position: relative;
                 max-width: 547px;
                 margin: 0 auto;
-               
-           
+
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: 0;
                     width: 100%;
                     height: 1px;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(255, 255, 255, 0.1);
                 }
                 li {
                     margin-right: 33px;
@@ -34,12 +39,12 @@
                     &:last-child {
                         margin-right: 0;
                     }
-    
+
                     &.react-tabs__tab--selected {
                         opacity: 1;
-    
+
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             bottom: 0;
@@ -53,7 +58,7 @@
                     }
                 }
             }
-    
+
             .content-tab {
                 margin-top: 28px;
                 display: none;
@@ -63,7 +68,6 @@
                 .accordion-item {
                     background: rgba(255, 255, 255, 0.04);
                     border-radius: 10px;
-                    padding: 27px 25px 20px 38px;
                     margin-bottom: 20px;
                     border: 1px solid rgba(255, 255, 255, 0.16);
                     cursor: pointer;
@@ -74,7 +78,7 @@
                         border: none !important;
                         outline: none;
                         .accordion-button {
-                            padding: 0;
+                            padding: 27px 25px 20px 38px;
                             text-transform: capitalize;
                             margin-bottom: 0;
                             position: relative;
@@ -86,13 +90,13 @@
                             background: transparent;
                             box-shadow: none;
                             &::after {
-                                font-family: 'icomoon';
+                                font-family: "icomoon";
                                 content: "\e900";
                                 color: #fff;
                                 font-size: 20px;
                                 position: absolute;
-                                top: 0;
-                                right: 0;
+                                top: 27px;
+                                right: 25px;
                                 transition: 0.3s all ease-in-out;
                                 background: none;
                             }
@@ -105,24 +109,23 @@
                     }
                     .accordion-body {
                         padding: 0;
-                        padding-top: 18px;
+                        // padding-top: 18px;
+                        padding: 0px 25px 20px 38px;
                     }
                     .toggle-content {
                         font-size: 15px;
                         margin-bottom: 0;
                         padding-right: 10px;
-                        color: #FFFFFF;
+                        color: #ffffff;
                         line-height: 1.73;
                     }
                     &.active {
                         .toggle-title {
-    
                             &::after {
                                 color: var(--primary-color);
                                 transform: rotate(-180deg);
                             }
                         }
-                        
                     }
                     &:last-child {
                         margin-bottom: 0;
@@ -130,32 +133,31 @@
                 }
             }
         }
-    
+
         @include mobile {
             padding-right: 0;
-    
+
             .flat-tabs .menu-tab {
                 flex-wrap: wrap;
                 justify-content: center;
                 &::after {
                     display: none;
                 }
-    
+
                 li {
                     margin-bottom: 20px;
                 }
             }
         }
     }
-    
-} 
+}
 
 .section-faq.style-2 {
     padding: 61px 0 43px;
 
     .block-text {
         .heading {
-            font-family: 'Zen Dots';
+            font-family: "Zen Dots";
             font-weight: 400;
         }
         p {
@@ -165,22 +167,22 @@
 
     .faq__content {
         padding-right: 94px;
-    
+
         .flat-tabs {
             margin-top: 40px;
-    
+
             .menu-tab {
                 display: flex;
                 position: relative;
-                
+
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: 0;
                     width: 100%;
                     height: 1px;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(255, 255, 255, 0.1);
                 }
                 li {
                     margin-right: 45px;
@@ -188,51 +190,50 @@
                     opacity: 0.2;
                     cursor: pointer;
                     position: relative;
-    
-                    
-    
+
                     &:last-child {
                         margin-right: 0;
                     }
-    
+
                     &.react-tabs__tab--selected {
                         opacity: 1;
-    
+
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             bottom: 0;
                             width: 100%;
                             height: 2px;
-                            background: #C004DE;;
+                            background: #c004de;
                         }
                     }
                     h6 {
                         margin-bottom: 10px;
-                        font-family: 'Zen Dots';
+                        font-family: "Zen Dots";
                         font-weight: 400;
                     }
                 }
             }
-    
+
             .content-tab {
                 margin-top: 24px;
-    
+                display: none;
                 .accordion-item {
                     background: $primary-opacity01;
                     border-radius: 10px;
-                    padding: 25px;
+                    // padding: 25px;
                     margin-bottom: 18px;
                     cursor: pointer;
                     .accordion-header {
                         text-transform: capitalize;
                         margin-bottom: 0;
                         position: relative;
-                        font-family: 'Zen Dots';
+                        font-family: "Zen Dots";
                         font-weight: 400;
                         .accordion-button {
-                            color: #C004DE;
+                            color: #c004de;
+                            padding: 25px 25px 19px;
                             background: transparent;
                             box-shadow: none;
                             line-height: 1.2;
@@ -242,15 +243,14 @@
                             position: relative;
                             font-family: "Zen Dots";
                             font-weight: 400;
-                            padding: 0;
                             &::after {
-                                font-family: 'icomoon';
+                                font-family: "icomoon";
                                 content: "\e900";
-                                color: #C004DE;
+                                color: #c004de;
                                 font-size: 20px;
                                 position: absolute;
-                                top: 0;
-                                right: 0;
+                                top: 25px;
+                                right: 25px;
                                 transition: 0.3s all ease-in-out;
                                 background: none;
                             }
@@ -264,27 +264,29 @@
                     }
                     .accordion-body {
                         padding: 0;
-                        padding-top: 19px;
                     }
                     .toggle-content {
                         margin-top: 0;
+                        padding: 0px 25px 25px;
                         font-size: 17px;
                         margin-bottom: 0;
                         color: rgba(255, 255, 255, 0.8);
                     }
                     &.active {
                         background: $line;
-    
+
                         .toggle-title {
-                            color: #C004DE;;
-    
+                            color: #c004de;
+
                             &::after {
-                                color: #C004DE;;
+                                color: #c004de;
                                 transform: rotate(-180deg);
                             }
                         }
-                        
                     }
+                }
+                &.react-tabs__tab-panel--selected {
+                    display: block;
                 }
             }
         }
@@ -292,30 +294,33 @@
         @include desktop-1200 {
             padding-right: 0;
         }
-    
+
         @include mobile {
-    
             .flat-tabs .menu-tab {
                 flex-wrap: wrap;
                 justify-content: center;
                 &::after {
                     display: none;
                 }
-    
+
                 li {
                     margin-bottom: 20px;
                 }
             }
         }
     }
-    
+
     .faq__images {
         text-align: right;
         img {
             animation: swing ease-in-out 1s infinite alternate;
             @keyframes swing {
-                0% { transform: rotate(3deg); }
-                100% { transform: rotate(-3deg); }
+                0% {
+                    transform: rotate(3deg);
+                }
+                100% {
+                    transform: rotate(-3deg);
+                }
             }
         }
         @include desktop-1200 {
@@ -338,10 +343,10 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 3.3px;
-            color: #C004DE;
+            color: #c004de;
         }
         .heading {
-            font-family: 'Russo One';
+            font-family: "Russo One";
             font-weight: 400;
             letter-spacing: 1.5px;
         }
@@ -350,8 +355,6 @@
     .flat-accordion {
         padding: 0 150px;
         margin-top: 69px;
-
-        
     }
     .accordion-item {
         &:first-child {
@@ -364,16 +367,16 @@
         margin-bottom: 41px;
         cursor: pointer;
         padding-bottom: 41px;
-        border-bottom: 1px solid #373D41;
+        border-bottom: 1px solid #373d41;
         .accordion-body {
-            padding: 0
+            padding: 0;
         }
         .accordion-button {
             background: transparent;
-            @include flex(center,flex-start);
+            @include flex(center, flex-start);
             margin-bottom: 0;
             position: relative;
-            font-family: 'Russo One';
+            font-family: "Russo One";
             font-size: 24px;
             color: #fff;
             font-weight: 400;
@@ -384,8 +387,8 @@
             padding-left: 90px;
             &::after {
                 @include transition3;
-                background: #1F2332;
-                font-family: 'icomoon';
+                background: #1f2332;
+                font-family: "icomoon";
                 font-size: 16px;
                 min-width: 40px;
                 width: 40px;
@@ -393,7 +396,7 @@
                 border-radius: 50%;
                 background-image: none;
                 transition: 0.3s all ease-in-out;
-                @include flex(center,center);
+                @include flex(center, center);
                 transform: rotate(0);
                 content: "\e954";
                 color: #fff;
@@ -408,9 +411,9 @@
         }
 
         span {
-            font-family: 'Russo One';
+            font-family: "Russo One";
             font-size: 36px;
-            color: #A09FAF;
+            color: #a09faf;
             margin-right: 52px;
             z-index: 9;
         }
@@ -431,14 +434,14 @@
             height: 40px;
             border-radius: 50%;
             background: #fff;
-            @include flex(center,center);
+            @include flex(center, center);
             position: absolute;
             top: 0;
             right: 0;
             transition: 0.3s all ease-in-out;
 
             &::before {
-                font-family: 'icomoon';
+                font-family: "icomoon";
                 content: "\e955";
                 color: #000;
                 font-size: 16px;
@@ -451,26 +454,24 @@
             font-size: 20px;
             margin-bottom: 0;
             padding-right: 10px;
-            color: #A09FAF;
+            color: #a09faf;
         }
         &.active {
             .toggle-title {
-
                 &::after {
                     color: var(--primary-color);
                     transform: rotate(-180deg);
                 }
             }
 
-            .icon {    
-                background: #1F2332;
-            
+            .icon {
+                background: #1f2332;
+
                 &::before {
                     content: "\e954";
                     color: #fff;
                 }
             }
-            
         }
         &:last-child {
             margin-bottom: 0;
@@ -479,9 +480,9 @@
         }
 
         @include mobile {
-            .toggle-title{
+            .toggle-title {
                 padding-right: 35px;
-                span  {
+                span {
                     margin-right: 22px;
                 }
             }
@@ -508,7 +509,7 @@
     .block-text {
         padding: 0 240px;
         .heading {
-            color: #B4E116;
+            color: #b4e116;
         }
         p {
             margin-top: 9px;
@@ -519,45 +520,41 @@
         padding: 0 240px;
         margin-top: 60px;
         .flat-tabs {
-            
-    
             .menu-tab {
                 display: flex;
                 position: relative;
-                
+
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: 0;
                     width: 100%;
                     height: 1px;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(255, 255, 255, 0.1);
                 }
                 li {
                     margin-right: 63px;
-                    color: #A09FAF;
+                    color: #a09faf;
                     cursor: pointer;
                     position: relative;
 
                     h5 {
-                        color: #A09FAF;
+                        color: #a09faf;
                         margin-bottom: 12px;
                     }
-    
-                    
-    
+
                     &:last-child {
                         margin-right: 0;
                     }
-    
+
                     &.react-tabs__tab--selected {
                         h5 {
                             color: #fff;
                         }
-    
+
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             bottom: 0;
@@ -568,7 +565,7 @@
                     }
                 }
             }
-    
+
             .content-tab {
                 margin-top: 52px;
                 display: none;
@@ -587,7 +584,7 @@
                     border-top: none;
                     border-left: none;
                     border-right: none;
-                    border-bottom: 1px solid #373D41;
+                    border-bottom: 1px solid #373d41;
                     background: transparent;
                     .accordion-header {
                         .accordion-button {
@@ -606,7 +603,7 @@
                             &::after {
                                 @include transition3;
                                 background: rgba(180, 225, 22, 0.8);
-                                font-family: 'icomoon';
+                                font-family: "icomoon";
                                 font-size: 16px;
                                 min-width: 40px;
                                 width: 40px;
@@ -614,7 +611,7 @@
                                 border-radius: 50%;
                                 background-image: none;
                                 transition: 0.3s all ease-in-out;
-                                @include flex(center,center);
+                                @include flex(center, center);
                                 transform: rotate(0);
                                 content: "\e954";
                                 color: #000;
@@ -626,22 +623,21 @@
                             }
                         }
                     }
-                   
-            
+
                     .icon {
                         min-width: 40px;
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
                         background: rgba(180, 225, 22, 0.8);
-                        @include flex(center,center);
+                        @include flex(center, center);
                         position: absolute;
                         top: -7px;
                         right: 0;
                         transition: 0.3s all ease-in-out;
-            
+
                         &::before {
-                            font-family: 'icomoon';
+                            font-family: "icomoon";
                             content: "\e955";
                             color: #000;
                             font-size: 16px;
@@ -653,20 +649,17 @@
                         // padding-top: 15px;
                     }
                     .toggle-content {
-
                         font-size: 17px;
                         margin-bottom: 0;
-                        color: #A09FAF;
+                        color: #a09faf;
                         padding-right: 50px;
                     }
-        
-                    .icon {    
-                
+
+                    .icon {
                         &::before {
                             content: "\e954";
                         }
                     }
-                    
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -675,15 +668,13 @@
                 }
             }
         }
-    
     }
 
     @include desktop-1200 {
-        .block-text , .faq__content {
+        .block-text,
+        .faq__content {
             padding: 0;
         }
-
-        
     }
     @include mobile {
         .menu-tab {
@@ -698,7 +689,6 @@
     }
 }
 
-
 .section-faq.style-5 {
     padding: 59px 0;
 
@@ -707,7 +697,7 @@
     .block-text {
         .heading {
             font-size: 56px;
-            font-family: 'Oswald';
+            font-family: "Oswald";
             font-weight: 700;
         }
         p {
@@ -720,7 +710,6 @@
         }
     }
 
-
     .faq__content {
         padding-left: 5px;
         .flat-tabs {
@@ -729,83 +718,81 @@
             .menu-tab {
                 display: flex;
                 position: relative;
-                
+
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: 0;
                     width: 100%;
                     height: 1px;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(255, 255, 255, 0.1);
                 }
                 li {
                     margin-right: 58px;
-                    color: #A09FAF;
+                    color: #a09faf;
                     cursor: pointer;
                     position: relative;
 
                     h5 {
-                        color: #A09FAF;
+                        color: #a09faf;
                         margin-bottom: 12px;
-                        font-family: 'Oswald';
+                        font-family: "Oswald";
                     }
-    
-                    
-    
+
                     &:last-child {
                         margin-right: 0;
                     }
-    
+
                     &.active {
                         h5 {
                             color: #fff;
                         }
-    
+
                         &::after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: 0;
                             bottom: 0;
                             width: 120%;
                             height: 2px;
-                            background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
+                            background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
                         }
                     }
                 }
             }
-    
+
             .content-tab {
                 margin-top: 34px;
-    
+
                 .flat-toggle {
                     margin-bottom: 32px;
                     cursor: pointer;
                     padding-bottom: 33px;
-                    border-bottom: 1px solid #373D41;
-                    
+                    border-bottom: 1px solid #373d41;
+
                     .toggle-title {
                         margin-bottom: 0;
                         position: relative;
                         color: #fff;
                         font-size: 24px;
-                        font-family: 'Oswald';
+                        font-family: "Oswald";
                     }
-            
+
                     .icon {
                         min-width: 40px;
                         width: 40px;
                         height: 40px;
                         border-radius: 50%;
-                        background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
-                        @include flex(center,center);
+                        background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+                        @include flex(center, center);
                         position: absolute;
                         top: -6px;
                         right: 0;
                         transition: 0.3s all ease-in-out;
-            
+
                         &::before {
-                            font-family: 'icomoon';
+                            font-family: "icomoon";
                             content: "\e955";
                             color: #fff;
                             font-size: 16px;
@@ -815,26 +802,23 @@
                     .toggle-content {
                         font-size: 17px;
                         margin-bottom: 0;
-                        color: #A09FAF;
+                        color: #a09faf;
                         padding-top: 16px;
                         padding-right: 50px;
                     }
                     &.active {
                         .toggle-title {
-            
                             &::after {
                                 color: var(--primary-color);
                                 transform: rotate(-180deg);
                             }
                         }
-            
-                        .icon {    
-                    
+
+                        .icon {
                             &::before {
                                 content: "\e954";
                             }
                         }
-                        
                     }
                     &:last-child {
                         margin-bottom: 0;
@@ -844,7 +828,6 @@
                 }
             }
         }
-    
     }
 
     .faq__images {
@@ -871,7 +854,6 @@
             width: 100%;
         }
     }
-
 }
 
 .home-nft-v2 {
@@ -884,11 +866,11 @@
                     backdrop-filter: blur(54px);
                     position: relative;
                     margin-bottom: 67px;
-                    padding:0;
+                    padding: 0;
                     margin-bottom: 19px;
+                    border: 2px solid #5c1594;
                     &::before {
                         @include transition3;
-                        border: 2px solid #5C1594;
                         border-radius: 10px;
                         position: absolute;
                         content: "";
@@ -913,36 +895,39 @@
                             }
                         }
                         &::after {
-                            color: #A09FAF;
+                            color: #a09faf;
                             top: 24px;
                             right: 28px;
                         }
                         &::before {
                             @include transition3;
-                            background: #5C1594;
+                            background: #5c1594;
                             position: absolute;
                             width: 200%;
                             height: 1000%;
-                            top:-20px;
+                            top: -20px;
                             left: -20px;
                             content: "";
                             z-index: -1;
                             border-radius: 10px;
                         }
                     }
+                    .accordion-body {
+                        padding: 0;
+                        padding-top: 18px;
+                    }
                     .toggle-content {
                         padding: 0px 80px 22px 37px;
                         font-size: 15px;
                         padding-right: 55px;
-                        color: #FFF;
+                        color: #fff;
                     }
-        
+
                     &.active {
-                        background: #5C1594;
+                        background: #5c1594;
                         .toggle-title {
                             color: #fff;
-                            
-        
+
                             &::after {
                                 color: #fff;
                             }
@@ -962,7 +947,6 @@
                 }
             }
         }
-
     }
 }
 
@@ -975,15 +959,15 @@
         }
         .block-text {
             .sub-heading {
-                color: #48D6D2;
+                color: #48d6d2;
                 font-weight: 700;
                 font-size: 14px;
                 letter-spacing: 2px;
             }
             .heading {
-                font-family: 'Inter';
+                font-family: "Inter";
                 font-weight: 600;
-                color: #13316B;
+                color: #13316b;
             }
         }
         .faq__content {
@@ -991,7 +975,7 @@
             .flat-tabs {
                 margin-top: 44px;
                 .menu-tab li {
-                    color: #A09FAF;
+                    color: #a09faf;
                     opacity: 1;
                     border-radius: 4px;
                     padding: 8px 15px;
@@ -999,10 +983,10 @@
                     &::after {
                         display: none;
                     }
-                    
+
                     h6 {
-                        color: #A09FAF;
-                        font-family: 'Inter';
+                        color: #a09faf;
+                        font-family: "Inter";
                         font-weight: 600;
                         font-size: 22px;
                         margin-bottom: 0;
@@ -1010,7 +994,7 @@
                     &.react-tabs__tab--selected {
                         background: rgba(46, 114, 210, 0.1);
                         h6 {
-                            color: #13316B;
+                            color: #13316b;
                         }
                     }
                 }
@@ -1030,17 +1014,17 @@
                     @include absolute;
                     width: 100%;
                     height: 2px;
-                    background: #E5E5E5;
+                    background: #e5e5e5;
                     top: auto;
                     bottom: -33px;
                 }
                 .accordion-header {
                     .accordion-button {
                         color: #181818;
-                        font-family: 'Inter';
+                        font-family: "Inter";
                         font-weight: 600;
                         font-size: 24px;
-    
+
                         &::after {
                             color: #181818;
                         }
@@ -1048,7 +1032,7 @@
                             color: #181818;
                             padding-right: 50px;
                             &::after {
-                                color: #A09FAF;
+                                color: #a09faf;
                             }
                         }
                     }
@@ -1059,7 +1043,7 @@
                     color: #636770;
                     padding-right: 55px;
                 }
-    
+
                 .accordion-body {
                     padding-top: 13px;
                 }
@@ -1090,8 +1074,19 @@
     }
 }
 
-@include mobile { 
+@include mobile {
     .section-faq.style-1 .section-faq__main .flat-tabs .content-tab .accordion-item {
         padding: 20px;
+    }
+}
+.animation-tab {
+    animation: fadeInFaq 0.8s;
+}
+@keyframes fadeInFaq {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

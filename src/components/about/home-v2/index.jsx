@@ -14,13 +14,8 @@ const dataTile = {
 function About(props) {
   const { data } = props;
 
-  //   const [dataTile] = useState({
-  //     title: "What is ICO?",
-  //     desc: "ICO Land is a generative NFT art collectible project of 10.000 unique, digitally hand-drawn avatars immortalized on the Ethereum blockchain.",
-  //   });
-
   return (
-    <section className="about style-2">
+    <section className="about style-2 mobie-pb0">
       <div className="container">
         <div className="row">
           <div className="col-12">

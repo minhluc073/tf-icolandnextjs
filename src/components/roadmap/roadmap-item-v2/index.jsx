@@ -27,7 +27,6 @@ function Roadmap(props) {
           alt="ICOLand"
           data-aos="fade-down"
           data-aos-duration="1000"
-          style={{ height: "auto" }}
         />
       </div>
     </div>

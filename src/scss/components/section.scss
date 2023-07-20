@@ -1502,6 +1502,9 @@
                 color: #5c1594;
             }
         }
+        @include desktop-1200 {
+            padding-bottom: 80px;
+        }
     }
 
     .section-team.style-6 {
@@ -2448,7 +2451,7 @@ h5 {
             padding-bottom: 0 !important;
         }
         &.banner-top {
-            padding: 180px 0 70px !important;
+            padding: 180px 0 0px !important;
         }
         &.dashboard {
             padding: 0 !important;

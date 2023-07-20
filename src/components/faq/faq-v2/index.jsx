@@ -50,7 +50,11 @@ function Faq(props) {
                 <p>{dataFaq.subtitle}</p>
               </div>
 
-              <div className="flat-tabs">
+              <div
+                className="flat-tabs"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <Tabs>
                   <TabList className="menu-tab">
                     {dataTab.map((data) => (
@@ -59,37 +63,37 @@ function Faq(props) {
                       </Tab>
                     ))}
                   </TabList>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
                       {data.slice(6, 10).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
-                      {data.slice(4, 8).map((item) => (
+                      {data.slice(6, 10).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
-                      {data.slice(8, 12).map((item) => (
+                      {data.slice(6, 10).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
-                      {data.slice(12, 16).map((item) => (
+                      {data.slice(6, 10).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
                   </TabPanel>
-                  <TabPanel className="content-tab">
+                  <TabPanel className="content-tab animation-tab">
                     <div className="content-inner flat-accordion">
-                      {data.slice(16, 20).map((item) => (
+                      {data.slice(6, 10).map((item) => (
                         <AccordionItem key={item.id} item={item} />
                       ))}
                     </div>
@@ -103,6 +107,7 @@ function Faq(props) {
               <Image
                 src={require("../../../assets/images/layout/imgfaq.png")}
                 alt="image"
+                style={{ height: "auto" }}
               />
             </div>
           </div>

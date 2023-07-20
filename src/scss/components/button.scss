@@ -1,11 +1,10 @@
-@use '../../scss/' as *;
-
+@use "../../scss/" as *;
 
 .section-button {
     padding: 57px 0;
 
     .list-button {
-        @include flex(center,space-between);
+        @include flex(center, space-between);
     }
 }
 
@@ -16,18 +15,18 @@
 
 .btn-action {
     padding: 17px 10px 15px 25px;
-
+    border: none;
     position: relative;
     overflow: hidden;
     font-weight: 700;
-    background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+    background: linear-gradient(294.72deg, #ff4581 9.05%, #4388dd 79.28%);
     border-radius: 100px;
     display: flex;
     align-items: center;
     max-width: 326px;
-    
+
     font-size: 16px;
-    
+
     span {
         position: relative;
         z-index: 2;
@@ -39,12 +38,12 @@
         border-radius: 50%;
         background: #fff;
         margin-left: 20px;
-        @include flex(center,center);
+        @include flex(center, center);
 
         &:before {
             font-size: 15px;
             font-weight: 900;
-            background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+            background: linear-gradient(294.72deg, #ff4581 9.05%, #4388dd 79.28%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transform: rotate(-90deg);
@@ -56,7 +55,7 @@
         width: 100%;
         height: 100%;
         transition: 0.5s all ease-in-out;
-        background: linear-gradient(-294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+        background: linear-gradient(-294.72deg, #ff4581 9.05%, #4388dd 79.28%);
         opacity: 0;
         transition: 0.5s all ease-in-out;
     }
@@ -72,7 +71,6 @@
     padding: 17px 15px 15px 24px;
 }
 
-
 .btn-action.style-2 {
     padding: 14px 41px;
 
@@ -81,21 +79,55 @@
     position: relative;
     overflow: hidden;
 
-    font-family: 'Zen Dots';
+    font-family: "Zen Dots";
     font-weight: 400;
-    background: linear-gradient(90deg, #F54097 0%, #EF369B 7.69%, #E92C9F 15.38%, #E122A4 23.08%, #D918A9 30.77%, #D00DAE 38.46%, #C603B3 46.15%, #BA00B9 53.85%, #AD01BE 61.54%, #9F07C4 69.23%, #8E10C9 76.92%, #7A18CF 84.62%, #6220D4 92.31%, #3F26D9 100%), linear-gradient(87.21deg, #F54097 0%, #3F26D9 100%);
+    background: linear-gradient(
+            90deg,
+            #f54097 0%,
+            #ef369b 7.69%,
+            #e92c9f 15.38%,
+            #e122a4 23.08%,
+            #d918a9 30.77%,
+            #d00dae 38.46%,
+            #c603b3 46.15%,
+            #ba00b9 53.85%,
+            #ad01be 61.54%,
+            #9f07c4 69.23%,
+            #8e10c9 76.92%,
+            #7a18cf 84.62%,
+            #6220d4 92.31%,
+            #3f26d9 100%
+        ),
+        linear-gradient(87.21deg, #f54097 0%, #3f26d9 100%);
     span {
         position: relative;
         z-index: 2;
     }
-    
+
     &::after {
         @include absolute;
         z-index: 1;
         width: 100%;
         height: 100%;
         transition: 0.5s all ease-in-out;
-        background: linear-gradient(-90deg, #F54097 0%, #EF369B 7.69%, #E92C9F 15.38%, #E122A4 23.08%, #D918A9 30.77%, #D00DAE 38.46%, #C603B3 46.15%, #BA00B9 53.85%, #AD01BE 61.54%, #9F07C4 69.23%, #8E10C9 76.92%, #7A18CF 84.62%, #6220D4 92.31%, #3F26D9 100%), linear-gradient(87.21deg, #F54097 0%, #3F26D9 100%);
+        background: linear-gradient(
+                -90deg,
+                #f54097 0%,
+                #ef369b 7.69%,
+                #e92c9f 15.38%,
+                #e122a4 23.08%,
+                #d918a9 30.77%,
+                #d00dae 38.46%,
+                #c603b3 46.15%,
+                #ba00b9 53.85%,
+                #ad01be 61.54%,
+                #9f07c4 69.23%,
+                #8e10c9 76.92%,
+                #7a18cf 84.62%,
+                #6220d4 92.31%,
+                #3f26d9 100%
+            ),
+            linear-gradient(87.21deg, #f54097 0%, #3f26d9 100%);
         opacity: 0;
         transition: 0.5s all ease-in-out;
     }
@@ -110,9 +142,9 @@
 
 .btn-action.style-3 {
     padding: 16px 40px;
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-weight: 400;
-    background: linear-gradient(90deg, #3DBFBB 0%, #8635BD 100%);
+    background: linear-gradient(90deg, #3dbfbb 0%, #8635bd 100%);
     border-radius: 0;
     letter-spacing: 3px;
 
@@ -122,7 +154,7 @@
         width: 100%;
         height: 100%;
         transition: 0.5s all ease-in-out;
-        background: linear-gradient(90deg, #8635BD 0%, #3DBFBB 100%);
+        background: linear-gradient(90deg, #8635bd 0%, #3dbfbb 100%);
         opacity: 0;
         transition: 0.5s all ease-in-out;
     }
@@ -134,9 +166,9 @@
 
 .btn-action.style-4 {
     padding: 14px 32px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 700;
-    background: linear-gradient(153.06deg, #13B8BA -0.31%, #6A0A6B 99.69%);
+    background: linear-gradient(153.06deg, #13b8ba -0.31%, #6a0a6b 99.69%);
     border-radius: 12px;
 
     &::after {
@@ -145,7 +177,7 @@
         width: 100%;
         height: 100%;
         transition: 0.5s all ease-in-out;
-        background: linear-gradient(153.06deg, #6A0A6B -0.31%, #13B8BA 99.69%);
+        background: linear-gradient(153.06deg, #6a0a6b -0.31%, #13b8ba 99.69%);
         opacity: 0;
         transition: 0.5s all ease-in-out;
     }
@@ -155,13 +187,19 @@
     }
 }
 .btn-action.style-5 {
-    background: linear-gradient(107.45deg, #23E4A1 10.53%, #2B52DB 58.9%, #2724CA 70.82%);
+    background: linear-gradient(107.45deg, #23e4a1 10.53%, #2b52db 58.9%, #2724ca 70.82%);
     border-radius: 57px;
     padding: 14px 40px;
     position: relative;
 
     &::after {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0px, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0));
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.13) 0px,
+            rgba(255, 255, 255, 0.13) 77%,
+            rgba(255, 255, 255, 0.5) 92%,
+            rgba(255, 255, 255, 0)
+        );
         content: "";
         height: 200%;
         left: -210%;
@@ -182,14 +220,20 @@
     }
 }
 .btn-action.style-6 {
-    background: linear-gradient(153.06deg, #B621FE -0.31%, #1FD1F9 99.69%);
+    background: linear-gradient(153.06deg, #b621fe -0.31%, #1fd1f9 99.69%);
     border-radius: 57px;
     padding: 14px 40px;
     position: relative;
     display: inline-block;
 
     &::after {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0px, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0));
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.13) 0px,
+            rgba(255, 255, 255, 0.13) 77%,
+            rgba(255, 255, 255, 0.5) 92%,
+            rgba(255, 255, 255, 0)
+        );
         content: "";
         height: 200%;
         left: -210%;
@@ -209,7 +253,6 @@
         transition-timing-function: linear;
     }
 }
-
 
 .btn-action-outline {
     position: relative;
@@ -239,20 +282,20 @@
     }
 }
 .btn-action-outline.style-1 {
-    border-color: #C004DE;
+    border-color: #c004de;
     border-radius: 12px;
     padding: 11px 33px;
 
     &::before {
-        background: #C004DE;
+        background: #c004de;
     }
 }
 .btn-action-outline.style-2 {
     border-radius: 0;
-    border:1px solid#fff;
+    border: 1px solid#fff;
     padding: 15px 39px;
     text-transform: uppercase;
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-weight: 400;
     letter-spacing: 3px;
     &::before {
@@ -260,11 +303,10 @@
     }
 
     &:hover {
-        color: #C004DE;
+        color: #c004de;
     }
 }
 .btn-action-outline.style-3 {
-    
     text-transform: capitalize;
     border: 2px solid rgba(35, 228, 161, 1);
     border-radius: 50px;
@@ -275,7 +317,7 @@
 }
 .btn-action-outline.style-4 {
     padding: 15px 39px;
-    border: 1px solid #B4E116;
+    border: 1px solid #b4e116;
 
     svg {
         position: relative;
@@ -283,13 +325,13 @@
     }
 
     &::before {
-        background: #B4E116;
+        background: #b4e116;
     }
 
     &.active {
         color: #181818;
         &::before {
-            background: #B4E116;
+            background: #b4e116;
             width: 100%;
         }
     }
@@ -314,7 +356,7 @@
     }
 }
 .btn-action-outline.style-5 {
-    font-family: 'Oswald';
+    font-family: "Oswald";
     text-transform: uppercase;
     padding: 12px 38px;
     border-radius: 50px;
@@ -324,7 +366,7 @@
     }
 }
 .btn-action-outline.style-6 {
-    font-family: 'Russo One';
+    font-family: "Russo One";
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 2.6px;
@@ -345,25 +387,25 @@
     font-family: $font-main;
     background: transparent;
     border: 2px solid var(--primary-color);
-    
-    
+
     &:hover {
         background: var(--primary-color);
         color: $white;
     }
-
-    
 }
 
-.group-button .btn-action , .group-button .btn-action-b {
+.group-button .btn-action,
+.group-button .btn-action-b {
     @include desktop-1200 {
         padding: 10px 15px;
     }
 }
 
 .btn-action-outli.style-9 {
-    background: linear-gradient(153.06deg, #050231 -0.31%, #050231 99.69%) padding-box, linear-gradient(153.06deg, rgba(67, 136, 221, 1)  -0.31%, rgba(255, 69, 129, 1) 99.69%) border-box;
-    
+    background:
+        linear-gradient(153.06deg, #050231 -0.31%, #050231 99.69%) padding-box,
+        linear-gradient(153.06deg, rgba(67, 136, 221, 1) -0.31%, rgba(255, 69, 129, 1) 99.69%) border-box;
+
     padding: 7px 40px;
 
     border-radius: 100px;
@@ -371,6 +413,8 @@
 
     &:hover {
         color: #fff;
-        background: linear-gradient(153.06deg, rgba(67, 136, 221, 1) -0.31%, rgba(255, 69, 129, 1) 99.69%) padding-box, linear-gradient(153.06deg, rgba(67, 136, 221, 1)  -0.31%, rgba(255, 69, 129, 1) 99.69%) border-box;
+        background:
+            linear-gradient(153.06deg, rgba(67, 136, 221, 1) -0.31%, rgba(255, 69, 129, 1) 99.69%) padding-box,
+            linear-gradient(153.06deg, rgba(67, 136, 221, 1) -0.31%, rgba(255, 69, 129, 1) 99.69%) border-box;
     }
 }
