@@ -30,7 +30,11 @@ function Faq(props) {
             </div>
           </div>
           <div className="col-md-12">
-            <div className="flat-accordion">
+            <div
+              className="flat-accordion"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               {data.slice(26, 30).map((item) => (
                 <AccordionItem key={item.id} item={item} />
               ))}

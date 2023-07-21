@@ -10,7 +10,7 @@ function Blog(props) {
   const { item } = props;
 
   return (
-    <div className="col-md-4">
+    <div className="col-md-4" data-aos="fade-up" data-aos-duration="800">
       <div className="blog-box">
         <div className="box-image">
           <Link href="blog-v3.html">

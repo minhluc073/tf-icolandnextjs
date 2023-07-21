@@ -62,21 +62,15 @@ function Banner(props) {
     }
   };
 
-  // const [dataTitle] = useState(
-  //     {
-  //         title : 'decentralised',
-  //         title2 : 'music platform',
-  //         title3 : 'built on Ethereum',
-  //         title4 : 'Token sale End In!',
-  //         desc : 'Discover songs, claim limited editions and support your favorite artists. Buy, sell or auction any audio file into a unique NFT with the power of blockchain.',
-  //     }
-  // )
-
   return (
     <section className="banner-top style-3">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-md-12">
+          <div
+            className="col-xl-6 col-md-12"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
             <div className="banner-top__content">
               <h2 className="title">
                 {dataTitle.title}
@@ -127,7 +121,11 @@ function Banner(props) {
             </div>
           </div>
           <div className="col-xl-6 col-md-12">
-            <div className="banner-top__sale">
+            <div
+              className="banner-top__sale"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <Image
                 src={require("../../../assets/images/layout/img-music.jpg")}
                 alt="ICOLand"

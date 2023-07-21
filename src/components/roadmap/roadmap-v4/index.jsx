@@ -31,7 +31,11 @@ function Roadmap(props) {
           </div>
         </div>
       </div>
-      <div className="road-map__main">
+      <div
+        className="road-map__main"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         {data.slice(27, 31).map((item) => (
           <Roadmapitem key={item.id} item={item} />
         ))}

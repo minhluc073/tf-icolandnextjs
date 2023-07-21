@@ -283,11 +283,15 @@
         position: relative;
         margin-top: 50px;
         margin-left: 87px;
-
+      
         img {
             position: absolute;
             bottom: 0;
             left: -37px;
+            @include desktop-1650 {
+                left: 0;
+                width: 100%;
+            }
         }
 
         @include tablet {

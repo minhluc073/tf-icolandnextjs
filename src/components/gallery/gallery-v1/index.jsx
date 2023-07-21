@@ -24,7 +24,12 @@ function Gallery(props) {
   // )
 
   return (
-    <section className="gallery" id="gallery">
+    <section
+      className="gallery"
+      id="gallery"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-12">

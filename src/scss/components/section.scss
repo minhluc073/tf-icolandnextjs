@@ -1474,7 +1474,12 @@
             width: 570px;
             height: 716px;
             margin-left: 0;
-
+            @include desktop-1400 {
+                margin-left: -60px;
+            }
+            @include desktop-1350 {
+                margin-left: -90px;
+            }
             @include desktop-1200 {
                 margin: 0 auto;
                 margin-top: 60px;

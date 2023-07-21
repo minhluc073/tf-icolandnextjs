@@ -52,7 +52,11 @@ function About(props) {
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-md-12">
-            <div className="about__video">
+            <div
+              className="about__video"
+              data-aos="zoom-in-left"
+              data-aos-duration="800"
+            >
               <div className="wrap-video">
                 <Image
                   src={require("../../../assets/images/background/bg-video.jpg")}
@@ -76,7 +80,11 @@ function About(props) {
             </Popup>
           </div>
           <div className="col-xl-6 col-md-12">
-            <div className="about__content">
+            <div
+              className="about__content"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <h6 className="sub-title">{dataTitle.subtitle}</h6>
               <h3 className="title">{dataTitle.title}</h3>
               <p className="text">{dataTitle.desc}</p>

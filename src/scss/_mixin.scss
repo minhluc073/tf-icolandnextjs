@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 @mixin flex($alignItem, $justifyContent) {
     display: flex;
@@ -6,14 +6,14 @@
     justify-content: $justifyContent;
 }
 
-@mixin  absolute (){
-    content: '';
+@mixin absolute() {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
 }
 
-@mixin  transition3 (){
+@mixin transition3() {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -21,7 +21,7 @@
     transition: all 0.3s ease;
 }
 
-@mixin  topcenter (){
+@mixin topcenter() {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -30,8 +30,7 @@
     transform: translateY(-50%);
 }
 
-
-@mixin size ($width , $height) {
+@mixin size($width, $height) {
     width: $width;
     height: $height;
 }
@@ -55,6 +54,11 @@
 
 @mixin desktop-1200 {
     @media only screen and (max-width: $desktop-width) {
+        @content;
+    }
+}
+@mixin desktop-1350 {
+    @media only screen and (max-width: $desktop-1350) {
         @content;
     }
 }

@@ -16,21 +16,16 @@ const dataTile = {
 
 function Tokendetails(props) {
   const { data } = props;
-  // const [dataTile] = useState(
-  //     {
-  //         title: 'WE ARE GROWING',
-  //         subtitle : 'Tokenomics',
-  //         desc:'For each transaction, an 12% tax fee is applied. This fee is then divided for different purpose of benefits.',
-  //         number : '1,000,000',
-  //         text:'Total supply',
-  //     }
-  // )
 
   return (
     <section className="token style-3" id="token">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-md-12">
+          <div
+            className="col-xl-6 col-md-12"
+            data-aos="fade-right"
+            data-aos-duration="600"
+          >
             <div className="block-text">
               <h6 className="sub-heading">{dataTile.subtitle}</h6>
               <h3 className="heading">{dataTile.title}</h3>
@@ -39,7 +34,11 @@ function Tokendetails(props) {
             </div>
           </div>
           <div className="col-xl-6 col-md-12">
-            <div className="token__content">
+            <div
+              className="token__content"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            >
               <div className="top">
                 <h2 className="number">{dataTile.number}</h2>
                 <h6 className="text">{dataTile.text}</h6>

@@ -11,7 +11,11 @@ function Feature(props) {
 
   return (
     <div className="col-xl-3 col-md-6">
-      <div className="features-box-3 center">
+      <div
+        className="features-box-3 center"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <div className="icon">
           <span className={`${item.classAction}`}></span>
         </div>

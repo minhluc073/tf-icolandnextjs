@@ -24,7 +24,7 @@ function Community(props) {
     <section className="join-now style-3" id="contact">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12" data-aos="fade-up" data-aos-duration="800">
             <div className="join-now__main center">
               <h6 className="sub-heading">{dataTitle.subtitle}</h6>
               <h3 className="heading">{dataTitle.title}</h3>
