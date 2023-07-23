@@ -1637,7 +1637,7 @@
         }
 
         .chart-bar {
-            width: 591px;
+            max-width: 591px;
             margin: 0 auto;
 
             @include mobile {
@@ -1730,8 +1730,10 @@
                 background: #181818;
             }
             .box-image {
+                height: 186px;
                 img {
                     opacity: 0.3;
+                    height: 100%;
                 }
             }
             .s4 {
@@ -2123,7 +2125,7 @@
                 margin-left: 0;
                 margin-bottom: 60px;
                 img {
-                    width: 100%;
+                    // width: 100%;
                 }
             }
         }

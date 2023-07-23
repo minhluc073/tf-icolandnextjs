@@ -48,7 +48,7 @@ function Tokendetails(props) {
             </div>
           </div>
           <div
-            className="col-xl-6 col-md-12"
+            className="col-xl-6 col-md-6"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -57,7 +57,7 @@ function Tokendetails(props) {
             </div>
           </div>
           <div
-            className="col-xl-6 col-md-12"
+            className="col-xl-6 col-md-6"
             data-aos="fade-up"
             data-aos-duration="1000"
           >

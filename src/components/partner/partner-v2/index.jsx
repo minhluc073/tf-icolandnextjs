@@ -33,7 +33,7 @@ function Partner(props) {
                   spaceBetween={30}
                   loop={true}
                   autoplay={{
-                    delay: 2000,
+                    delay: 0,
                   }}
                   breakpoints={{
                     0: {
@@ -61,6 +61,7 @@ function Partner(props) {
                       spaceBetween: 60,
                     },
                   }}
+                  speed={5000}
                 >
                   {data.slice(6, 13).map((item) => (
                     <SwiperSlide key={item.id}>
@@ -76,8 +77,10 @@ function Partner(props) {
                   spaceBetween={30}
                   loop={true}
                   autoplay={{
-                    delay: 2000,
+                    delay: 0,
+                    reverseDirection: true,
                   }}
+                  speed={5000}
                   breakpoints={{
                     0: {
                       slidesPerView: 2,
@@ -119,8 +122,9 @@ function Partner(props) {
                   spaceBetween={30}
                   loop={true}
                   autoplay={{
-                    delay: 2000,
+                    delay: 0,
                   }}
+                  speed={5000}
                   breakpoints={{
                     0: {
                       slidesPerView: 2,

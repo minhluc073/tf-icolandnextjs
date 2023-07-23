@@ -63,7 +63,7 @@ function Banner(props) {
     <section className="banner-top style-7">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-md-12">
+          <div className="col-xl-6 col-md-6">
             <div className="banner-top__content">
               <h2 className="title">{dataTitle.title}</h2>
               <p className="desc">{dataTitle.desc}</p>
@@ -82,7 +82,7 @@ function Banner(props) {
               </ul>
             </div>
           </div>
-          <div className="col-xl-6 col-md-12">
+          <div className="col-xl-6 col-md-6">
             <div className="banner-top__sale">
               <Image
                 src={require("../../../assets/images/layout/banner-7.jpg")}

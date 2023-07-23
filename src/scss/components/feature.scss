@@ -224,7 +224,9 @@
         @include flex(center, center);
         margin: 0 auto;
         transform: translateX(-3px);
-
+        img {
+            transition: 0.9s all ease-in-out;
+        }
         &::before {
             @include absolute;
             top: 5px;
@@ -237,6 +239,12 @@
 
         span {
             font-size: 37px;
+        }
+    }
+    &:hover .icon {
+        img {
+            transform: rotateY(-360deg);
+            display: block;
         }
     }
     .features-box-content {

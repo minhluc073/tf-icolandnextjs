@@ -523,6 +523,9 @@
             width: 100%;
             height: 3px;
             background: rgba(255, 255, 255, 0.2);
+            @include desktop-1200 {
+                display: none;
+            }
         }
         &::after {
             @include absolute;
@@ -531,6 +534,9 @@
             height: 3px;
             background: rgba(255, 255, 255, 0.7);
             z-index: 0;
+            @include desktop-1200 {
+                display: none;
+            }
         }
         .box-roadmap {
             width: 301px;
@@ -684,6 +690,9 @@
             left: -14px;
             right: 0;
             text-align: center;
+            @include desktop-1200 {
+                display: none;
+            }
         }
 
         @include mobile {
@@ -723,7 +732,7 @@
                 height: 2px;
                 background: rgba(46, 114, 210, 0.8);
 
-                @include mobile {
+                @include desktop-1200 {
                     display: none;
                 }
             }
@@ -747,11 +756,16 @@
                         box-shadow: rgba(46, 114, 210, 0.2) 0 0 0 10px;
                     }
                 }
+                @include desktop-1200 {
+                    display: none;
+                }
             }
 
             &.left {
                 margin-bottom: 222px;
-
+                @include desktop-1200 {
+                    margin-bottom: 80px;
+                }
                 &::before {
                     left: auto;
                     right: -94px;
@@ -763,6 +777,9 @@
             }
             &.right {
                 margin-top: 202px;
+                @include desktop-1200 {
+                    margin-top: 0px;
+                }
                 &::before {
                     left: -94px;
                 }
@@ -888,6 +905,9 @@
                 position: absolute;
                 right: 0;
                 top: 71px;
+                @include tablet {
+                    display: none;
+                }
             }
             .icon {
                 width: 40px;
@@ -956,6 +976,9 @@
 
                 .title-box {
                     margin-bottom: 48px;
+                    @include tablet {
+                        margin-bottom: 30px;
+                    }
                     &::after {
                         right: auto;
                         left: 0;
@@ -1289,6 +1312,9 @@
 
                 background: #9bc800;
                 box-shadow: 12px 8px 50px rgba(155, 200, 0, 0.15);
+                @include desktop-1200 {
+                    display: none;
+                }
             }
             svg {
                 position: absolute;

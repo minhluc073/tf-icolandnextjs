@@ -31,6 +31,11 @@ function Partner(props) {
                   className="swiper swiper-partner"
                   modules={[Autoplay]}
                   spaceBetween={30}
+                  loop={true}
+                  autoplay={{
+                    delay: 0,
+                  }}
+                  speed={5000}
                   breakpoints={{
                     0: {
                       slidesPerView: 2,
@@ -70,6 +75,12 @@ function Partner(props) {
                   className="swiper swiper-partner"
                   modules={[Autoplay]}
                   spaceBetween={30}
+                  loop={true}
+                  autoplay={{
+                    delay: 0,
+                    reverseDirection: true,
+                  }}
+                  speed={5000}
                   breakpoints={{
                     0: {
                       slidesPerView: 2,
@@ -109,6 +120,11 @@ function Partner(props) {
                   className="swiper swiper-partner"
                   modules={[Autoplay]}
                   spaceBetween={30}
+                  loop={true}
+                  autoplay={{
+                    delay: 100,
+                  }}
+                  speed={6000}
                   breakpoints={{
                     0: {
                       slidesPerView: 2,

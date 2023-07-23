@@ -646,7 +646,9 @@
         url("./../../assets/images/background/bg-banner-top-4.jpg") no-repeat;
     background-size: cover;
     position: relative;
-
+    @include desktop-1200 {
+        padding-bottom: 0px;
+    }
     .container {
         position: relative;
         z-index: 1;
@@ -795,7 +797,9 @@
     background: url("./../../assets/images/background/banner-top-6.jpg") no-repeat;
     background-size: cover;
     position: relative;
-
+    @include desktop-1200 {
+        padding: 170px 0px 80px;
+    }
     .container {
         position: relative;
         z-index: 1;
@@ -863,7 +867,9 @@
             animation: move5 3s infinite linear;
             margin-top: -130px;
             margin-left: -14px;
-
+            @include desktop-1750 {
+                width: 100%;
+            }
             @include desktop-1200 {
                 margin-top: 60px;
             }
@@ -1156,6 +1162,9 @@
         .desc {
             font-size: 17px;
             padding-right: 115px;
+            @include tablet {
+                padding-right: 0px;
+            }
         }
         .button {
             margin-top: 36px;
@@ -1169,6 +1178,7 @@
         .content-list {
             margin-top: 79px;
             display: flex;
+            flex-wrap: wrap;
 
             li {
                 padding-right: 103px;
@@ -1224,7 +1234,11 @@
         margin-top: -7px;
         position: relative;
         margin-left: 30px;
-
+        img {
+            @include desktop-1750 {
+                width: 100%;
+            }
+        }
         .sale-content {
             @include absolute;
             top: auto;
@@ -1253,7 +1267,9 @@
                     display: inline-block;
 
                     position: relative;
-
+                    @include tablet {
+                        margin: 0 28px;
+                    }
                     &::before {
                         content: ":";
                         position: absolute;
@@ -1320,6 +1336,9 @@
             font-size: 17px;
             margin-top: 14px;
             padding-right: 140px;
+            @include mb-450 {
+                padding-right: 0px;
+            }
         }
         .button {
             margin-top: 46px;
@@ -1333,10 +1352,18 @@
         }
     }
     .banner-top__image {
+        img {
+            animation: move5 3s infinite linear;
+            padding-top: 40px;
+        }
         @include desktop-1200 {
             margin-top: 50px;
+        }
+        @include desktop-1750 {
             img {
+                padding-top: 0px;
                 width: 100%;
+                height: auto;
             }
         }
     }
@@ -1459,6 +1486,9 @@
                         padding: 0 47px;
                         position: relative;
                         margin-bottom: 0;
+                        @include mb-450 {
+                            padding: 0px 18px;
+                        }
 
                         &::before {
                             @include absolute;

@@ -31,6 +31,11 @@ function Partner(props) {
                 className="swiper swiper-partner-3"
                 modules={[Autoplay]}
                 spaceBetween={30}
+                loop={true}
+                autoplay={{
+                  delay: 0,
+                }}
+                speed={3000}
                 breakpoints={{
                   0: {
                     slidesPerView: 2,
@@ -59,6 +64,7 @@ function Partner(props) {
                 className="swiper swiper-partner-3"
                 modules={[Autoplay]}
                 spaceBetween={30}
+                loop={true}
                 breakpoints={{
                   0: {
                     slidesPerView: 2,
@@ -72,7 +78,17 @@ function Partner(props) {
                     slidesPerView: 8,
                     spaceBetween: 30,
                   },
+                  1280: {
+                    slidesPerView: 8,
+                    spaceBetween: 30,
+                  },
                 }}
+                autoplay={{
+                  delay: 0,
+                  // reverseDirection: true,
+                  // disableOnInteraction: true,
+                }}
+                speed={4000}
               >
                 {data.slice(12, 21).map((item) => (
                   <SwiperSlide key={item.id}>

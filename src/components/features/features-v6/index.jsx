@@ -15,7 +15,7 @@ function Feature(props) {
   const { data } = props;
 
   return (
-    <section className="features style-7" id="features">
+    <section className="features style- mobie-pb0" id="features">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

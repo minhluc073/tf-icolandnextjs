@@ -53,7 +53,7 @@ function About(props) {
     <section className="about style-5">
       <div className="container">
         <div className="row">
-          <div className="col-xl-5 col-md-12">
+          <div className="col-xl-5 col-md-6">
             <div className="about__video">
               <div className="wrap-video">
                 <Image
@@ -76,7 +76,7 @@ function About(props) {
               <span className="icon-play">abc</span>
             </Popup>
           </div>
-          <div className="col-xl-7 col-md-12">
+          <div className="col-xl-7 col-md-6">
             <div className="about__content">
               <div className="block-text">
                 <h6 className="sub-title">{dataTitle.subtitle}</h6>
