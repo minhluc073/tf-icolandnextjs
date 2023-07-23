@@ -19,7 +19,7 @@
         @include flex(center, center);
         position: fixed;
         z-index: 99;
-        top: 15px;
+        top: 23px;
         left: 360px;
         height: 45px;
         width: 45px;
@@ -76,8 +76,9 @@
         .sidebar__logo {
             padding: 40px 0;
             @include flex(center, center);
-            margin-bottom: 40px;
+            margin-bottom: 23px;
         }
+
         .sidebar__menu {
             height: 60vh;
             width: 100%;
@@ -258,9 +259,15 @@
             }
         }
     }
-
+    &.db-token {
+        .dashboard__sidebar {
+            .sidebar__logo {
+                margin-bottom: 40px;
+            }
+        }
+    }
     .dashboard__content {
-        padding: 73px 46px 40px 29px;
+        padding: 73px 22px 40px 29px;
         padding-left: 417px;
         transition: all 0.3s ease;
         position: relative;
@@ -288,6 +295,10 @@
             width: 100%;
             height: 100px;
             background: #14141f;
+            @include desktop-1200 {
+                right: 0;
+                padding-right: 30px;
+            }
             .user {
                 display: inline-block;
                 width: 48px;
@@ -377,29 +388,56 @@
                     flex-wrap: wrap;
                     margin-top: 60px;
                     margin-left: 15px;
+                    @include tablet {
+                        justify-content: center;
+                    }
+
                     .btn-action.style-5 {
                         background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
                         text-transform: uppercase;
                         font-size: 16px;
                         margin-right: 20px;
 
-                        @include mobile {
-                            margin-bottom: 10px;
+                        // @include mobile {
+                        //     margin-bottom: 10px;
+                        // }
+                    }
+                    @include mb-450 {
+                        margin-left: 0px;
+                        .btn-action.style-5 {
+                            margin-right: 0px;
+                            margin-bottom: 20px;
+                            width: 100%;
+                            max-width: unset;
+                            @include flex(center, center);
+                        }
+
+                        .btn-action-outline.style-5 {
+                            width: 100%;
+                            @include flex(center, center);
                         }
                     }
                 }
                 .content-list {
                     margin-top: 100px;
                     display: flex;
-
+                    @include tablet {
+                        justify-content: center;
+                    }
                     li {
                         padding-right: 72px;
                         position: relative;
                         display: flex;
                         flex-direction: column;
+                        @include mb-450 {
+                            align-items: center;
+                        }
 
                         &:nth-child(2) {
                             padding-right: 94px;
+                            @include mobile {
+                                padding-right: 0px;
+                            }
                         }
                         .number {
                             min-width: 60px;
@@ -452,7 +490,8 @@
                         }
                     }
                     @include mobile {
-                        flex-wrap: wrap;
+                        // flex-wrap: wrap;
+                        gap: 15px;
                         li {
                             padding-right: 0;
                             width: 100%;
@@ -463,19 +502,33 @@
                             }
                         }
                     }
+                    @include mb-450 {
+                        flex-wrap: wrap;
+                    }
                 }
 
                 .banner-top__sale {
-                    padding-left: 59px;
-                    padding-top: 26px;
+                    padding-left: 4px;
+                    padding-top: 27px;
+                    padding-right: 100px;
+                    @include desktop-1650 {
+                        padding-right: 0px;
+                    }
                     .sale-image {
                         display: flex;
                         flex-wrap: wrap;
                         img {
                             border-radius: 20px;
                             margin-bottom: 16px;
-                            width: 33.33%;
-                            height: auto;
+                            transition: 0.3s all ease-in-out;
+                            &:hover {
+                                transform: translate3d(0, -5px, 0);
+                                cursor: pointer;
+                            }
+                            @include desktop-1650 {
+                                width: 33.33%;
+                                height: auto;
+                            }
                             &:nth-child(1) {
                                 clip-path: polygon(
                                     0 0,
@@ -639,8 +692,8 @@
                 padding: 0;
                 padding-top: 27px;
                 .about__content {
-                    padding-top: 51px;
-                    padding-left: 59px;
+                    padding-top: 48px;
+                    padding-left: 17px;
                     padding-right: 72px;
                 }
             }
@@ -662,9 +715,21 @@
                     display: flex;
                     justify-content: flex-end;
                     padding-right: 10px;
+                    @include desktop-1200 {
+                        justify-content: center;
+                    }
+                    @include mobile {
+                        gap: 20px;
+                    }
 
                     img {
                         border-radius: 20px;
+                        transition: 0.3s all ease-in-out;
+
+                        @include mb-450 {
+                            width: 100%;
+                            height: auto;
+                        }
                         &:nth-child(1) {
                             clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 92% 100%, 100% 100%, 0 100%, 0% 100%, 0% 0);
                         }
@@ -673,6 +738,10 @@
                         }
                         &:nth-child(3) {
                             clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%, 8% 0);
+                        }
+                        &:hover {
+                            transform: translate3d(0, -5px, 0);
+                            cursor: pointer;
                         }
                     }
                     @include mobile {
@@ -747,7 +816,7 @@
                 }
                 .button {
                     text-align: right;
-                    margin-right: 19px;
+                    margin-right: 20px;
                     margin-top: 50px;
                     @include mobile {
                         text-align: left;
@@ -764,7 +833,14 @@
                             width: 100%;
                             border-radius: 20px;
                             margin-bottom: 16px;
+                            transition: 0.3s all ease-in-out;
                         }
+                        &:hover {
+                            img {
+                                transform: translate3d(0, -5px, 0);
+                            }
+                        }
+
                         &:nth-child(1) {
                             img {
                                 clip-path: polygon(
@@ -892,6 +968,10 @@
                 .faq__images {
                     padding-right: 10px;
                     padding-left: 61px;
+                    @include desktop-1200 {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
                 }
             }
         }
@@ -928,7 +1008,9 @@
     padding: 59px 0;
 
     margin-bottom: 80px;
-
+    @include mobile {
+        margin-bottom: 0px;
+    }
     .block-text {
         .heading {
             font-size: 56px;
@@ -948,7 +1030,7 @@
     .faq__content {
         padding-left: 5px;
         .react-tabs {
-            margin-top: 59px;
+            margin-top: 56px;
             margin-right: -5px;
             .menu-tab {
                 display: flex;
@@ -998,13 +1080,17 @@
             }
 
             .content-tab {
-                margin-top: 34px;
+                margin-top: 26px;
+                display: none;
+                &.react-tabs__tab-panel--selected {
+                    display: block;
+                }
 
                 .accordion-item {
                     background: transparent;
-                    margin-bottom: 32px;
+                    margin-bottom: 28px;
                     cursor: pointer;
-                    padding-bottom: 33px;
+                    padding-bottom: 28px;
                     border-bottom: 1px solid #373d41;
                     .accordion-button {
                         padding: 0;
@@ -1064,7 +1150,7 @@
                         font-size: 17px;
                         margin-bottom: 0;
                         color: #a09faf;
-                        padding-top: 16px;
+                        padding-top: 10px;
                         padding-right: 50px;
                     }
                     &.active {
@@ -1120,6 +1206,7 @@
         img {
             width: 100%;
             height: auto;
+            animation: move5 4s infinite linear;
         }
     }
 }
@@ -1138,9 +1225,9 @@
             &.click {
                 padding-left: 0;
                 padding-right: 0;
-                .overlay {
-                    display: block;
-                }
+                // .overlay {
+                //     display: block;
+                // }
             }
         }
         .btn {

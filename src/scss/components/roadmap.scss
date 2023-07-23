@@ -514,6 +514,9 @@
         margin-top: 112px;
         padding: 0 211px;
         position: relative;
+        @include desktop-1200 {
+            margin-top: 30px;
+        }
         &::before {
             @include absolute;
             top: -64px;
@@ -1588,7 +1591,7 @@
 
 @include desktop-1200 {
     .road-map.style-3 .road-map__main {
-        padding: 85px 0 0 !important;
+        padding: 85px 0 30px !important;
         width: 100%;
         overflow-x: auto;
         overflow-y: auto;

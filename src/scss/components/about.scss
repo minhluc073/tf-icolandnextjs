@@ -430,14 +430,23 @@
         display: flex;
         margin-top: 57px;
 
+        @include tablet {
+            justify-content: center;
+        }
+
         img {
             border-radius: 20px;
+            transition: 0.3s all ease-in-out;
 
             &:nth-child(1) {
                 clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 92% 100%, 100% 100%, 0 100%, 0% 100%, 0% 0);
             }
             &:nth-child(2) {
                 clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%, 8% 0);
+            }
+            &:hover {
+                transform: translate3d(0, -5px, 0);
+                cursor: pointer;
             }
         }
 

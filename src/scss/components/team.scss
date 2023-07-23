@@ -1124,6 +1124,9 @@
     .team-main {
         display: flex;
         flex-wrap: wrap;
+        @include tablet {
+            justify-content: center;
+        }
     }
 
     .team-box-9 {
@@ -1135,9 +1138,16 @@
         .team-box__image {
             img {
                 border-radius: 20px;
+                transition: 0.3s all ease-in-out;
             }
         }
-
+        &:hover {
+            .team-box__image {
+                img {
+                    transform: translate3d(0, -5px, 0);
+                }
+            }
+        }
         .team-box__content {
             text-align: center;
             padding: 16px 10px 10px;

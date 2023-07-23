@@ -63,6 +63,7 @@ function Footer(props) {
                         type="text"
                         className="form-control"
                         placeholder="Enter your name"
+                        required
                       />
                     </div>
                     <div className="form-group col-md-6">
@@ -72,11 +73,12 @@ function Footer(props) {
                         className="form-control"
                         id="exampleInputEmail4"
                         placeholder="Enter your email"
+                        required
                       />
                     </div>
                     <div className="form-group col-md-12">
                       <label>Your Message</label>
-                      <textarea placeholder="Messages"></textarea>
+                      <textarea placeholder="Messages" required></textarea>
                     </div>
                   </div>
                   <button type="submit" className="btn-action style-3">

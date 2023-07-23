@@ -6,6 +6,9 @@
 }
 .features.style-3 {
     padding: 87px 0 75px;
+    @include desktop-1200 {
+        padding: 60px 0px;
+    }
     .block-text {
         margin-bottom: 63px;
         .sub-heading {
@@ -283,7 +286,7 @@
         position: relative;
         margin-top: 50px;
         margin-left: 87px;
-      
+
         img {
             position: absolute;
             bottom: 0;

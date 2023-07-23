@@ -79,6 +79,11 @@
         @content;
     }
 }
+@mixin mb-450 {
+    @media only screen and (max-width: 450px) {
+        @content;
+    }
+}
 @mixin desktop-1900 {
     @media only screen and (max-width: $desktop-1900) {
         @content;

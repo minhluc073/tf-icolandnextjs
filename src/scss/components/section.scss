@@ -562,6 +562,9 @@
 
     .token.style-3 {
         padding: 159px 0 160px;
+        @include desktop-1200 {
+            padding: 60px 0px;
+        }
         .block-text {
             .sub-heading {
                 font-size: 18px;
@@ -659,6 +662,9 @@
 
     .gallery {
         padding: 163px 0 132px;
+        @include desktop-1400 {
+            padding: 70px 0px;
+        }
 
         .block-text {
             padding-top: 69px;
@@ -784,7 +790,9 @@
 
     .blog {
         padding: 160px 0;
-
+        @include desktop-1200 {
+            padding: 80px 0px;
+        }
         .block-text {
             margin-bottom: 62px;
             .sub-heading {

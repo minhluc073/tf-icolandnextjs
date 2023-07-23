@@ -160,7 +160,7 @@ function Dashboard(props) {
               </Link>
             </li>
           </ul>
-          <p className="fs-14">© 2022. All rights reserved by Themesflat</p>
+          <p className="fs-14">© 2023. All rights reserved by Themesflat</p>
         </div>
       </nav>
       <div className={`dashboard__content ${toggleClassclick}`}>
@@ -181,7 +181,7 @@ function Dashboard(props) {
           <section className="section-faq style-5">
             <div className="container-fluid">
               <div className="row">
-                <div className="col-xl-8 col-md-12">
+                <div className="col-xl-8 col-sm-8">
                   <div className="faq__content">
                     <div className="block-text">
                       <h2 className="heading">{dataTitle.title}</h2>
@@ -195,30 +195,30 @@ function Dashboard(props) {
                           </Tab>
                         ))}
                       </TabList>
-                      <TabPanel className="content-tab">
+                      <TabPanel className="content-tab animation-tab">
                         <div className="content-inner flat-accordion">
-                          {data.slice(0, 4).map((item) => (
+                          {data.slice(26, 30).map((item) => (
                             <AccordionItem key={item.id} item={item} />
                           ))}
                         </div>
                       </TabPanel>
-                      <TabPanel className="content-tab">
+                      <TabPanel className="content-tab animation-tab">
                         <div className="content-inner flat-accordion">
-                          {data.slice(4, 8).map((item) => (
+                          {data.slice(26, 30).map((item) => (
                             <AccordionItem key={item.id} item={item} />
                           ))}
                         </div>
                       </TabPanel>
-                      <TabPanel className="content-tab">
+                      <TabPanel className="content-tab animation-tab">
                         <div className="content-inner flat-accordion">
-                          {data.slice(8, 12).map((item) => (
+                          {data.slice(26, 30).map((item) => (
                             <AccordionItem key={item.id} item={item} />
                           ))}
                         </div>
                       </TabPanel>
-                      <TabPanel className="content-tab">
+                      <TabPanel className="content-tab animation-tab">
                         <div className="content-inner flat-accordion">
-                          {data.slice(12, 16).map((item) => (
+                          {data.slice(26, 30).map((item) => (
                             <AccordionItem key={item.id} item={item} />
                           ))}
                         </div>
@@ -226,7 +226,7 @@ function Dashboard(props) {
                     </Tabs>
                   </div>
                 </div>
-                <div className="col-xl-4 col-md-12">
+                <div className="col-xl-4 col-sm-4">
                   <div className="faq__images">
                     <Image
                       src={require("../../../assets/images/layout/faq.png")}

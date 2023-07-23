@@ -8,11 +8,6 @@ Dashboard.propTypes = {
   data: PropTypes.array,
 };
 
-const dataTitle = {
-  title: "Meet Our Team",
-  desc: "ICOLand is a collection of 10,000 Bored Ape NFTs unique digital collectibles living on the Ethereum blockchain.",
-};
-
 function Dashboard(props) {
   const { data } = props;
 
@@ -163,8 +158,12 @@ function Dashboard(props) {
               <div className="row">
                 <div className="col-md-12">
                   <div className="block-text">
-                    <h2 className="heading">{dataTitle.title}</h2>
-                    <div className="desc fs-20 mt-21">{dataTitle.desc}</div>
+                    <h2 className="heading">Meet Our Team</h2>
+                    <div className="desc fs-20 mt-21">
+                      ICOLand is a collection of 10,000 Bored Ape NFTs unique
+                      digital <br /> collectibles living on the Ethereum
+                      blockchain.
+                    </div>
                   </div>
 
                   <div className="team-main">

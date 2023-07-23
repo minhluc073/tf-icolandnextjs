@@ -90,7 +90,7 @@ function Dashboard(props) {
   let togglemenu = menuState ? "show" : null;
 
   return (
-    <section className="dashboard">
+    <section className="dashboard db-token">
       <div className={`btn ${toggleClassclick}`} onClick={handleClick}>
         <span className="fas fa-bars"></span>
       </div>
