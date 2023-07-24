@@ -40,6 +40,9 @@
             height: 8px;
             background: linear-gradient(294.72deg, #ff4581 9.05%, #4388dd 79.28%);
             opacity: 0.1;
+            @include desktop-1200 {
+                display: none;
+            }
         }
         &::after {
             @include absolute;
@@ -47,6 +50,9 @@
             width: 37%;
             height: 8px;
             border-top: 2px dashed var(--primary-color);
+            @include desktop-1200 {
+                display: none;
+            }
         }
 
         @include desktop-1900 {
