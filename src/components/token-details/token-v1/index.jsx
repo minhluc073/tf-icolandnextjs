@@ -22,7 +22,7 @@ function Tokendetails(props) {
       <div className="container">
         <div className="row">
           <div
-            className="col-xl-6 col-md-12"
+            className="col-md-6"
             data-aos="fade-right"
             data-aos-duration="600"
           >
@@ -33,7 +33,7 @@ function Tokendetails(props) {
               <Button title="White paper" addclass="style-6" path="#" />
             </div>
           </div>
-          <div className="col-xl-6 col-md-12">
+          <div className="col-md-6">
             <div
               className="token__content"
               data-aos="fade-left"

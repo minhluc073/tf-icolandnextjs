@@ -546,7 +546,11 @@
     .banner-top__sale {
         text-align: right;
         padding-left: 123px;
-
+        img {
+            @include desktop-1200 {
+                width: 100%;
+            }
+        }
         .sale-content {
             margin-top: -170px;
             padding: 26px 0 37px;

@@ -51,7 +51,7 @@ function About(props) {
     <section className="about style-3">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-md-12">
+          <div className="col-md-6">
             <div
               className="about__video"
               data-aos="zoom-in-left"
@@ -79,7 +79,7 @@ function About(props) {
               <span className="icon-play">abc</span>
             </Popup>
           </div>
-          <div className="col-xl-6 col-md-12">
+          <div className="col-md-6">
             <div
               className="about__content"
               data-aos="fade-up"

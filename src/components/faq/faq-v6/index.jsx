@@ -54,28 +54,28 @@ function Faq(props) {
                         </Tab>
                       ))}
                     </TabList>
-                    <TabPanel className="content-tab">
+                    <TabPanel className="content-tab animation-tab">
                       <div className="content-inner flat-accordion">
                         {data.slice(0, 4).map((item) => (
                           <AccordionItem key={item.id} item={item} />
                         ))}
                       </div>
                     </TabPanel>
-                    <TabPanel className="content-tab">
+                    <TabPanel className="content-tab animation-tab">
                       <div className="content-inner flat-accordion">
                         {data.slice(4, 8).map((item) => (
                           <AccordionItem key={item.id} item={item} />
                         ))}
                       </div>
                     </TabPanel>
-                    <TabPanel className="content-tab">
+                    <TabPanel className="content-tab animation-tab">
                       <div className="content-inner flat-accordion">
                         {data.slice(8, 12).map((item) => (
                           <AccordionItem key={item.id} item={item} />
                         ))}
                       </div>
                     </TabPanel>
-                    <TabPanel className="content-tab">
+                    <TabPanel className="content-tab animation-tab">
                       <div className="content-inner flat-accordion">
                         {data.slice(12, 16).map((item) => (
                           <AccordionItem key={item.id} item={item} />

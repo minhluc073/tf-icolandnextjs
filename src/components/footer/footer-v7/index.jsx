@@ -10,7 +10,7 @@ Footer.propTypes = {
 const dataTitle = {
   title: "Newsletter",
   desc: "We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below. Someone from our team will get back to you shortly ",
-  copyright: "icoland 2022- ALL rights reserved",
+  copyright: "icoland 2023- ALL rights reserved",
   title2: "Email Address",
 };
 

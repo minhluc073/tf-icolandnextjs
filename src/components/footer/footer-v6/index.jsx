@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 import Footeritem from "../footer-item";
+import logo from "@/src/assets/images/logo/logo-05.png";
 
 Footer.propTypes = {
   data: PropTypes.array,
@@ -19,10 +20,7 @@ function Footer(props) {
         <div className="row">
           <div className="col-xl-6 col-md-6">
             <div className="info">
-              <Image
-                src={require("../../../assets/images/logo/logo03.png")}
-                alt="ICOLand"
-              />
+              <Image src={logo} alt="ICOLand" />
               <p className="fs-20">{dataTitle.copyright}</p>
               <ul className="list-social">
                 <li>
