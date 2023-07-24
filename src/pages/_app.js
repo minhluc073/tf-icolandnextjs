@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps }) {
         <Preloader />
       ) : (
         <>
-          {/* <AnimateCursor backgroundColor={background} /> */}
+          <AnimateCursor backgroundColor={background} />
           <Component {...pageProps} />
         </>
       )}
